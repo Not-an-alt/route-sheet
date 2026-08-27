@@ -1,5 +1,5 @@
 {
- "build": "2026-08-25-b",
+ "build": "2026082719145",
  "generated": "2026-08-27",
  "versions": {
   "A": {
@@ -1614,7 +1614,8 @@
      "text": "Last dive at least 24 h before the 13 Nov flight — no diving on the 12th",
      "done": false
     }
-   ]
+   ],
+   "detours": {}
   },
   "B": {
    "tripStart": "2026-09-10",
