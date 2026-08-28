@@ -1,6 +1,6 @@
 {
- "build": "2026082719145",
- "generated": "2026-08-27",
+ "build": "2026-08-27-g",
+ "generated": "2026-08-28",
  "versions": {
   "A": {
    "tripStart": "2026-09-10",
@@ -188,23 +188,47 @@
     },
     {
      "id": "d26",
-     "place": "Bergen to Bovec",
+     "place": "Amsterdam",
      "tag": "transit",
-     "nights": 1,
-     "transport": "Fly BGO to Ljubljana, bus onward",
-     "stay": "In transit",
-     "notes": "Travel day. The Eurail pass starts earning from here.",
+     "nights": 3,
+     "transport": "Fly Bergen to Schiphol direct with KLM, 1h50",
+     "stay": "Friend place — free",
+     "notes": "Drop the 40 kg. You cannot take it to Bovec, so this stop is a logistics requirement, not a luxury. Unpack, repack a trek load, resupply.",
      "items": [
       {
        "id": "d27",
-       "text": "Activate Eurail Global Pass",
+       "text": "Fly BGO to AMS, 2 bags at 20 kg",
+       "kind": "Transit — direct beats one-stop with this much luggage",
+       "done": false
+      },
+      {
+       "id": "d28",
+       "text": "Leave everything you will not need again until 13 Nov",
+       "kind": "Logistics",
+       "done": false
+      },
+      {
+       "id": "d29",
+       "text": "Repack to a trek load only",
+       "kind": "Logistics",
+       "done": false
+      },
+      {
+       "id": "d30",
+       "text": "Activate the Eurail pass",
        "kind": "Admin",
+       "done": false
+      },
+      {
+       "id": "d31",
+       "text": "Fly Schiphol to Ljubljana",
+       "kind": "Transit",
        "done": false
       }
      ]
     },
     {
-     "id": "d28",
+     "id": "d32",
      "place": "Bovec, Slovenia",
      "tag": "adv",
      "nights": 3,
@@ -213,25 +237,25 @@
      "notes": "Everything here winds down mid-October, which is why it goes first.",
      "items": [
       {
-       "id": "d29",
+       "id": "d33",
        "text": "Soca rafting or kayak",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d30",
+       "id": "d34",
        "text": "Susec canyoning",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d31",
+       "id": "d35",
        "text": "Kanin paragliding",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d32",
+       "id": "d36",
        "text": "Krn or Triglav approach",
        "kind": "Trek",
        "done": false
@@ -239,34 +263,34 @@
      ]
     },
     {
-     "id": "d33",
+     "id": "d37",
      "place": "Dolomites",
      "tag": "trek",
-     "nights": 5,
+     "nights": 3,
      "transport": "Bus to Tarvisio, train to Bolzano",
      "stay": "Campsite or valley room",
-     "notes": "Rifugi mostly shut. Day hikes, and via ferrata on the clear days.",
+     "notes": "Three days, not five — the two went to the Amsterdam luggage stop. Rifugi are shut anyway and both headline routes need seasonal lifts running.",
      "items": [
       {
-       "id": "d34",
+       "id": "d38",
        "text": "Tre Cime di Lavaredo loop",
        "kind": "Trek — 10 km",
        "done": false
       },
       {
-       "id": "d35",
+       "id": "d39",
        "text": "Seceda ridgeline",
        "kind": "Trek",
        "done": false
       },
       {
-       "id": "d36",
+       "id": "d40",
        "text": "Brenta or Sella via ferrata",
        "kind": "Adventure — weather dependent",
        "done": false
       },
       {
-       "id": "d37",
+       "id": "d41",
        "text": "Lago di Braies",
        "kind": "Short walk",
        "done": false
@@ -274,7 +298,7 @@
      ]
     },
     {
-     "id": "d38",
+     "id": "d42",
      "place": "Arco and Lake Garda",
      "tag": "adv",
      "nights": 4,
@@ -283,25 +307,25 @@
      "notes": "Peak-season limestone. Warm rock, cheap, and the best pure-fun stop of the trip.",
      "items": [
       {
-       "id": "d39",
+       "id": "d43",
        "text": "Sport climbing, Massone and Nago",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d40",
+       "id": "d44",
        "text": "Via ferrata, Monte Baldo",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d41",
+       "id": "d45",
        "text": "Brenta canyoning",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d42",
+       "id": "d46",
        "text": "Paraglide Malcesine",
        "kind": "Adventure",
        "done": false
@@ -309,7 +333,7 @@
      ]
     },
     {
-     "id": "d43",
+     "id": "d47",
      "place": "Milan",
      "tag": "city",
      "nights": 2,
@@ -318,31 +342,31 @@
      "notes": "The one logistics window before the Alps. Buy cold-weather kit here rather than hauling it from Norway.",
      "items": [
       {
-       "id": "d44",
+       "id": "d48",
        "text": "Lipstick — Rinascente beauty hall",
        "kind": "Errand",
        "done": false
       },
       {
-       "id": "d45",
+       "id": "d49",
        "text": "Decathlon or Cisalfa for alpine kit",
        "kind": "Gear",
        "done": false
       },
       {
-       "id": "d46",
+       "id": "d50",
        "text": "Post surplus gear home",
        "kind": "Logistics",
        "done": false
       },
       {
-       "id": "d47",
+       "id": "d51",
        "text": "Duomo rooftop",
        "kind": "Sightseeing",
        "done": false
       },
       {
-       "id": "d48",
+       "id": "d52",
        "text": "Navigli in the evening",
        "kind": "Food",
        "done": false
@@ -350,7 +374,7 @@
      ]
     },
     {
-     "id": "d49",
+     "id": "d53",
      "place": "Chamonix — buffer",
      "tag": "rest",
      "nights": 2,
@@ -359,25 +383,25 @@
      "notes": "Buffer days by design. If a front is coming, this is where you wait it out.",
      "items": [
       {
-       "id": "d50",
+       "id": "d54",
        "text": "Go / no-go: chamonix-meteo plus webcams",
        "kind": "Decision",
        "done": false
       },
       {
-       "id": "d51",
+       "id": "d55",
        "text": "Buy 4 days of food and gas",
        "kind": "Resupply",
        "done": false
       },
       {
-       "id": "d52",
+       "id": "d56",
        "text": "Phone the three winter rooms",
        "kind": "Booking",
        "done": false
       },
       {
-       "id": "d53",
+       "id": "d57",
        "text": "Leave the plan with someone at home",
        "kind": "Safety",
        "done": false
@@ -385,7 +409,7 @@
      ]
     },
     {
-     "id": "d54",
+     "id": "d58",
      "place": "Tour du Mont Blanc",
      "tag": "trek",
      "nights": 9,
@@ -394,61 +418,61 @@
      "notes": "Counter-clockwise. 150 km, 9000 m. The three cols that decide it: Croix du Bonhomme, Col de la Seigne, Grand Col Ferret.",
      "items": [
       {
-       "id": "d55",
+       "id": "d59",
        "text": "D1 Les Houches to Les Contamines",
        "kind": "18 km, +800 / -750 — bivouac Pont de la Rollaz",
        "done": false
       },
       {
-       "id": "d56",
+       "id": "d60",
        "text": "D2 to Refuge Croix du Bonhomme",
        "kind": "13 km, +1320 — winter room, 2479 m",
        "done": false
       },
       {
-       "id": "d57",
+       "id": "d61",
        "text": "D3 over Col de la Seigne to Elisabetta",
        "kind": "21 km — winter room, 2195 m",
        "done": false
       },
       {
-       "id": "d58",
+       "id": "d62",
        "text": "D4 to Courmayeur",
        "kind": "18 km, -1600 — paid bed, main resupply",
        "done": false
       },
       {
-       "id": "d59",
+       "id": "d63",
        "text": "D5 to Rifugio Bonatti",
        "kind": "12 km, +1000 — winter room, 2025 m",
        "done": false
       },
       {
-       "id": "d60",
+       "id": "d64",
        "text": "D6 over Grand Col Ferret to La Fouly",
        "kind": "20 km — paid bed",
        "done": false
       },
       {
-       "id": "d61",
+       "id": "d65",
        "text": "D7 to Champex-Lac",
        "kind": "15 km — paid bed",
        "done": false
       },
       {
-       "id": "d62",
+       "id": "d66",
        "text": "D8 Champex to Trient via Bovine",
        "kind": "16 km — paid bed",
        "done": false
       },
       {
-       "id": "d63",
+       "id": "d67",
        "text": "D9 Col de Balme to Tre-le-Champ",
        "kind": "13 km — train back to Chamonix",
        "done": false
       },
       {
-       "id": "d64",
+       "id": "d68",
        "text": "Dropped: Col des Fours, Fenetre Arpette, Tricot",
        "kind": "Variants — too high for late Oct",
        "done": false
@@ -456,7 +480,7 @@
      ]
     },
     {
-     "id": "d65",
+     "id": "d69",
      "place": "Chamonix to Barcelona",
      "tag": "transit",
      "nights": 2,
@@ -465,13 +489,13 @@
      "notes": "Post the alpine kit to Amsterdam from Chamonix. One rest day: laundry, food, nothing.",
      "items": [
       {
-       "id": "d66",
+       "id": "d70",
        "text": "Post winter bag, mat and spikes to Amsterdam",
        "kind": "Logistics — from Chamonix, EU to EU",
        "done": false
       },
       {
-       "id": "d67",
+       "id": "d71",
        "text": "Laundry and resupply",
        "kind": "Admin",
        "done": false
@@ -479,7 +503,7 @@
      ]
     },
     {
-     "id": "d68",
+     "id": "d72",
      "place": "Siurana and Margalef",
      "tag": "adv",
      "nights": 4,
@@ -488,19 +512,19 @@
      "notes": "Prime-season limestone, and the tent works again.",
      "items": [
       {
-       "id": "d69",
+       "id": "d73",
        "text": "Siurana sport climbing",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d70",
+       "id": "d74",
        "text": "Margalef pockets",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d71",
+       "id": "d75",
        "text": "Montserrat multi-pitch",
        "kind": "Adventure — optional day",
        "done": false
@@ -508,7 +532,7 @@
      ]
     },
     {
-     "id": "d72",
+     "id": "d76",
      "place": "El Chorro",
      "tag": "adv",
      "nights": 4,
@@ -517,19 +541,19 @@
      "notes": "November is the season here.",
      "items": [
       {
-       "id": "d73",
+       "id": "d77",
        "text": "Caminito del Rey",
        "kind": "Book well ahead, sells out",
        "done": false
       },
       {
-       "id": "d74",
+       "id": "d78",
        "text": "El Chorro sport crags",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d75",
+       "id": "d79",
        "text": "Malaga",
        "kind": "Rest day",
        "done": false
@@ -537,7 +561,7 @@
      ]
     },
     {
-     "id": "d76",
+     "id": "d80",
      "place": "Lanzarote",
      "tag": "dive",
      "nights": 2,
@@ -546,13 +570,13 @@
      "notes": "Warm-up dives and the sculpture field before El Hierro.",
      "items": [
       {
-       "id": "d77",
+       "id": "d81",
        "text": "Museo Atlantico sculptures",
        "kind": "Dive — 12 to 14 m",
        "done": false
       },
       {
-       "id": "d78",
+       "id": "d82",
        "text": "Timanfaya",
        "kind": "Sightseeing",
        "done": false
@@ -560,7 +584,7 @@
      ]
     },
     {
-     "id": "d79",
+     "id": "d83",
      "place": "El Hierro",
      "tag": "dive",
      "nights": 4,
@@ -569,25 +593,25 @@
      "notes": "Mar de las Calmas reserve. 30 to 40 m visibility, water about 23C. Few operators on the island — book early.",
      "items": [
       {
-       "id": "d80",
+       "id": "d84",
        "text": "La Restinga dive days",
        "kind": "Dive — volcanic arches, groupers",
        "done": false
       },
       {
-       "id": "d81",
+       "id": "d85",
        "text": "El Bajon seamount",
        "kind": "Dive",
        "done": false
       },
       {
-       "id": "d82",
+       "id": "d86",
        "text": "GR131 El Hierro section",
        "kind": "Trek — half day",
        "done": false
       },
       {
-       "id": "d83",
+       "id": "d87",
        "text": "Mirador de la Pena",
        "kind": "Sightseeing",
        "done": false
@@ -595,7 +619,7 @@
      ]
     },
     {
-     "id": "d84",
+     "id": "d88",
      "place": "Los Cristianos, Tenerife",
      "tag": "transit",
      "nights": 1,
@@ -604,13 +628,13 @@
      "notes": "Buffer night. A cancelled ferry on the 13th would cost the flight home. La Estaca is 8 km from Valverde; buses 03 and 11 run in about 20 min.",
      "items": [
       {
-       "id": "d85",
+       "id": "d89",
        "text": "Ferry La Estaca to Los Cristianos, 2h20",
        "kind": "Transit",
        "done": false
       },
       {
-       "id": "d86",
+       "id": "d90",
        "text": "Last dive at least 24 h before flying",
        "kind": "Safety",
        "done": false
@@ -618,7 +642,7 @@
      ]
     },
     {
-     "id": "d87",
+     "id": "d91",
      "place": "Tenerife to Amsterdam",
      "tag": "transit",
      "nights": 1,
@@ -627,7 +651,7 @@
      "notes": "Out, and not back to Norway. Direct, cheap, and 38 flights a week instead of a handful.",
      "items": [
       {
-       "id": "d88",
+       "id": "d92",
        "text": "Confirm baggage allowance for dive and trek kit",
        "kind": "Admin",
        "done": false
@@ -637,336 +661,343 @@
    ],
    "bookings": [
     {
-     "id": "d89",
+     "id": "d93",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Refuge Croix du Bonhomme — confirm October access and key",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d90",
+     "id": "d94",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Rifugio Elisabetta — confirm",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d91",
+     "id": "d95",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Rifugio Bonatti — confirm",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d92",
+     "id": "d96",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Courmayeur, night of 21 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d93",
+     "id": "d97",
      "group": "Tour du Mont Blanc",
      "what": "Bed in La Fouly, night of 23 Oct — campsite shuts 4 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d94",
+     "id": "d98",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Champex-Lac, night of 24 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d95",
+     "id": "d99",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Trient, night of 25 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d96",
+     "id": "d100",
      "group": "Tour du Mont Blanc",
      "what": "Val Veny and Val Ferret campsites — phone for October opening",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d97",
+     "id": "d101",
      "group": "Tour du Mont Blanc",
      "what": "Chamonix to Courmayeur tunnel bus timetable, for the bail",
      "deadline": "2026-10-10",
      "status": "todo"
     },
     {
-     "id": "d98",
+     "id": "d102",
      "group": "Tour du Mont Blanc",
      "what": "Alpine rescue insurance covering Italy and Switzerland",
      "deadline": "2026-09-30",
      "status": "todo"
     },
     {
-     "id": "d99",
+     "id": "d103",
      "group": "Tour du Mont Blanc",
      "what": "GPX on watch, plus paper map and compass",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d100",
+     "id": "d104",
      "group": "Flights",
-     "what": "Bergen to Ljubljana, 1 Oct",
+     "what": "Bergen to Amsterdam, 1 Oct — KLM direct, 2 checked bags at 20 kg each",
      "deadline": "2026-09-05",
      "status": "todo"
     },
     {
-     "id": "d101",
+     "id": "d105",
+     "group": "Flights",
+     "what": "Amsterdam to Ljubljana, 4 Oct",
+     "deadline": "2026-09-20",
+     "status": "todo"
+    },
+    {
+     "id": "d106",
      "group": "Flights",
      "what": "Bergen to Bodo or Evenes for Lofoten, ~26 Sept",
      "deadline": "2026-09-05",
      "status": "todo"
     },
     {
-     "id": "d102",
+     "id": "d107",
      "group": "Flights",
-     "what": "Lofoten south to Oslo, 30 Sept — this leg was missing from the plan",
+     "what": "Lofoten back to Bergen, 30 Sept — the 40 kg is in Bergen, so Norway has to end there",
      "deadline": "2026-09-05",
      "status": "todo"
     },
     {
-     "id": "d103",
+     "id": "d108",
      "group": "Flights",
      "what": "Malaga to Arrecife, 6 Nov",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d104",
+     "id": "d109",
      "group": "Flights",
      "what": "Arrecife to Tenerife SOUTH, 8 Nov — south, not north, to reach the ferry",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d105",
+     "id": "d110",
      "group": "Flights",
      "what": "Tenerife South to Amsterdam Schiphol, 13 Nov — direct, Transavia or easyJet",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d106",
+     "id": "d111",
      "group": "Rail & ferry",
      "what": "Activate Eurail Global Pass on 1 Oct",
      "deadline": "2026-09-28",
      "status": "todo"
     },
     {
-     "id": "d107",
+     "id": "d112",
      "group": "Rail & ferry",
      "what": "Bergen railway seat to Finse",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d108",
+     "id": "d113",
      "group": "Rail & ferry",
      "what": "Ljubljana to Bovec bus",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d109",
+     "id": "d114",
      "group": "Rail & ferry",
      "what": "Milan to Chamonix, 16 Oct",
      "deadline": "2026-10-05",
      "status": "todo"
     },
     {
-     "id": "d110",
+     "id": "d115",
      "group": "Rail & ferry",
      "what": "Chamonix to Barcelona via Geneva and Montpellier, 27 Oct",
      "deadline": "2026-10-10",
      "status": "todo"
     },
     {
-     "id": "d111",
+     "id": "d116",
      "group": "Rail & ferry",
      "what": "Barcelona to Malaga, 2 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d112",
+     "id": "d117",
      "group": "Rail & ferry",
      "what": "Fred Olsen ferry Los Cristianos to El Hierro, 8 Nov — about 5 sailings a week Oct-May, confirm the day",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d113",
+     "id": "d118",
      "group": "Rail & ferry",
      "what": "Ferry El Hierro to Los Cristianos, 12 Nov — day before the flight, never on it",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d114",
+     "id": "d119",
      "group": "Stays",
      "what": "Voss, 20 to 21 Sept",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d115",
+     "id": "d120",
      "group": "Stays",
      "what": "Andalsnes, 22 to 25 Sept",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d116",
+     "id": "d121",
      "group": "Stays",
      "what": "Lofoten base, 26 to 30 Sept",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d117",
+     "id": "d122",
      "group": "Stays",
-     "what": "Bovec campsite, 2 to 4 Oct",
+     "what": "Bovec campsite, 5 to 7 Oct",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d118",
+     "id": "d123",
      "group": "Stays",
      "what": "Milan hotel, 14 to 15 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d119",
+     "id": "d124",
      "group": "Stays",
      "what": "Chamonix, 16 to 17 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d120",
+     "id": "d125",
      "group": "Stays",
      "what": "Camping Siurana, 29 Oct to 1 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d121",
+     "id": "d126",
      "group": "Stays",
      "what": "El Chorro, 2 to 5 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d122",
+     "id": "d127",
      "group": "Stays",
      "what": "La Restinga dive package with accommodation, 8 to 11 Nov",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d123",
+     "id": "d128",
      "group": "Stays",
      "what": "Los Cristianos or near TFS, night of 12 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d124",
+     "id": "d129",
      "group": "Activities",
      "what": "Skydive Voss slot",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d125",
+     "id": "d130",
      "group": "Activities",
      "what": "Folgefonna guided glacier walk — season ends late Sept",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d126",
+     "id": "d131",
      "group": "Activities",
      "what": "Naeroyfjord sea kayak, Flam",
      "deadline": "2026-09-14",
      "status": "todo"
     },
     {
-     "id": "d127",
+     "id": "d132",
      "group": "Activities",
      "what": "Bovec rafting and canyoning",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d128",
+     "id": "d133",
      "group": "Activities",
      "what": "Skydive Bovec tandem, 2 to 4 Oct — Skydive Bovec or SportMix, not Prostipad",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d129",
+     "id": "d134",
      "group": "Activities",
      "what": "Caminito del Rey tickets — sells out",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d130",
+     "id": "d135",
      "group": "Activities",
      "what": "El Hierro dive centre, 5 days",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d131",
+     "id": "d136",
      "group": "Admin",
      "what": "Police verification, 9 Sept",
      "deadline": "2026-09-09",
      "status": "todo"
     },
     {
-     "id": "d132",
+     "id": "d137",
      "group": "Admin",
      "what": "Collect residence permit card",
      "deadline": "2026-09-30",
      "status": "todo"
     },
     {
-     "id": "d133",
+     "id": "d138",
      "group": "Admin",
      "what": "DNT membership and universal hut key",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d134",
+     "id": "d139",
      "group": "Admin",
      "what": "Check the Schengen visa is multi-entry",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d135",
+     "id": "d140",
      "group": "Admin",
      "what": "Travel insurance including recreational diving to 30 m",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d136",
+     "id": "d141",
      "group": "Admin",
      "what": "Card that works across NOK, EUR and CHF",
      "deadline": "2026-09-20",
@@ -975,7 +1006,7 @@
    ],
    "kit": [
     {
-     "id": "d137",
+     "id": "d142",
      "cat": "Alpine & TMB",
      "item": "Tent, freestanding, good in wind",
      "note": "Used again in Spain — keep it with you",
@@ -983,7 +1014,7 @@
      "ship": false
     },
     {
-     "id": "d138",
+     "id": "d143",
      "cat": "Alpine & TMB",
      "item": "Sleeping bag, comfort rated -7C",
      "note": "High camps run -5 to -8C in late Oct - post to Amsterdam 27 Oct",
@@ -991,7 +1022,7 @@
      "ship": true
     },
     {
-     "id": "d139",
+     "id": "d144",
      "cat": "Alpine & TMB",
      "item": "Sleeping mat, R4 or better",
      "note": "",
@@ -999,7 +1030,7 @@
      "ship": true
     },
     {
-     "id": "d140",
+     "id": "d145",
      "cat": "Alpine & TMB",
      "item": "Microspikes",
      "note": "",
@@ -1007,7 +1038,7 @@
      "ship": true
     },
     {
-     "id": "d141",
+     "id": "d146",
      "cat": "Alpine & TMB",
      "item": "Gaiters",
      "note": "",
@@ -1015,7 +1046,7 @@
      "ship": true
     },
     {
-     "id": "d142",
+     "id": "d147",
      "cat": "Alpine & TMB",
      "item": "Trekking poles",
      "note": "",
@@ -1023,7 +1054,7 @@
      "ship": false
     },
     {
-     "id": "d143",
+     "id": "d148",
      "cat": "Alpine & TMB",
      "item": "Stove and isobutane canisters",
      "note": "Buy gas in Europe — cannot fly with it",
@@ -1031,7 +1062,7 @@
      "ship": false
     },
     {
-     "id": "d144",
+     "id": "d149",
      "cat": "Alpine & TMB",
      "item": "Headtorch, spare, batteries",
      "note": "Dark by 17:30 after 25 Oct",
@@ -1039,7 +1070,7 @@
      "ship": false
     },
     {
-     "id": "d145",
+     "id": "d150",
      "cat": "Alpine & TMB",
      "item": "Satellite messenger",
      "note": "Rescue is billed in Italy and Switzerland",
@@ -1047,7 +1078,7 @@
      "ship": true
     },
     {
-     "id": "d146",
+     "id": "d151",
      "cat": "Alpine & TMB",
      "item": "Paper map and compass",
      "note": "Waymarks vanish under snow",
@@ -1055,7 +1086,7 @@
      "ship": false
     },
     {
-     "id": "d147",
+     "id": "d152",
      "cat": "Alpine & TMB",
      "item": "Water filter or tablets",
      "note": "",
@@ -1063,7 +1094,7 @@
      "ship": false
     },
     {
-     "id": "d148",
+     "id": "d153",
      "cat": "Alpine & TMB",
      "item": "First aid and blister kit",
      "note": "",
@@ -1071,7 +1102,7 @@
      "ship": false
     },
     {
-     "id": "d149",
+     "id": "d154",
      "cat": "Camp & sleep",
      "item": "Dry bags",
      "note": "",
@@ -1079,7 +1110,7 @@
      "ship": false
     },
     {
-     "id": "d150",
+     "id": "d155",
      "cat": "Camp & sleep",
      "item": "Repair kit and tape",
      "note": "",
@@ -1087,7 +1118,7 @@
      "ship": false
     },
     {
-     "id": "d151",
+     "id": "d156",
      "cat": "Camp & sleep",
      "item": "Camp towel",
      "note": "",
@@ -1095,7 +1126,7 @@
      "ship": false
     },
     {
-     "id": "d152",
+     "id": "d157",
      "cat": "Clothing",
      "item": "Hardshell jacket and trousers",
      "note": "",
@@ -1103,7 +1134,7 @@
      "ship": true
     },
     {
-     "id": "d153",
+     "id": "d158",
      "cat": "Clothing",
      "item": "Insulated jacket",
      "note": "",
@@ -1111,7 +1142,7 @@
      "ship": true
     },
     {
-     "id": "d154",
+     "id": "d159",
      "cat": "Clothing",
      "item": "Base layers x2",
      "note": "",
@@ -1119,7 +1150,7 @@
      "ship": false
     },
     {
-     "id": "d155",
+     "id": "d160",
      "cat": "Clothing",
      "item": "Fleece midlayer",
      "note": "",
@@ -1127,7 +1158,7 @@
      "ship": false
     },
     {
-     "id": "d156",
+     "id": "d161",
      "cat": "Clothing",
      "item": "Warm hat and gloves",
      "note": "",
@@ -1135,7 +1166,7 @@
      "ship": true
     },
     {
-     "id": "d157",
+     "id": "d162",
      "cat": "Clothing",
      "item": "Sun hat and sunglasses",
      "note": "",
@@ -1143,7 +1174,7 @@
      "ship": false
     },
     {
-     "id": "d158",
+     "id": "d163",
      "cat": "Clothing",
      "item": "Boots, broken in",
      "note": "",
@@ -1151,7 +1182,7 @@
      "ship": false
     },
     {
-     "id": "d159",
+     "id": "d164",
      "cat": "Clothing",
      "item": "Approach shoes",
      "note": "For the Spanish crags",
@@ -1159,7 +1190,7 @@
      "ship": false
     },
     {
-     "id": "d160",
+     "id": "d165",
      "cat": "Clothing",
      "item": "Swim shorts and quick-dry towel",
      "note": "",
@@ -1167,7 +1198,7 @@
      "ship": false
     },
     {
-     "id": "d161",
+     "id": "d166",
      "cat": "Climbing",
      "item": "Harness, shoes, chalk bag",
      "note": "",
@@ -1175,7 +1206,7 @@
      "ship": false
     },
     {
-     "id": "d162",
+     "id": "d167",
      "cat": "Climbing",
      "item": "Belay device and screwgate",
      "note": "",
@@ -1183,7 +1214,7 @@
      "ship": false
     },
     {
-     "id": "d163",
+     "id": "d168",
      "cat": "Climbing",
      "item": "Rope — or hire in Siurana",
      "note": "60 m; heavy to carry from India",
@@ -1191,7 +1222,7 @@
      "ship": false
     },
     {
-     "id": "d164",
+     "id": "d169",
      "cat": "Dive & water",
      "item": "Mask and snorkel",
      "note": "",
@@ -1199,7 +1230,7 @@
      "ship": false
     },
     {
-     "id": "d165",
+     "id": "d170",
      "cat": "Dive & water",
      "item": "Dive computer",
      "note": "",
@@ -1207,7 +1238,7 @@
      "ship": false
     },
     {
-     "id": "d166",
+     "id": "d171",
      "cat": "Dive & water",
      "item": "Logbook and certification card",
      "note": "",
@@ -1215,7 +1246,7 @@
      "ship": false
     },
     {
-     "id": "d167",
+     "id": "d172",
      "cat": "Dive & water",
      "item": "Rash guard",
      "note": "",
@@ -1223,7 +1254,7 @@
      "ship": false
     },
     {
-     "id": "d168",
+     "id": "d173",
      "cat": "Electronics",
      "item": "Phone with offline maps",
      "note": "Download Norway, Alps, Andalusia, El Hierro",
@@ -1231,7 +1262,7 @@
      "ship": false
     },
     {
-     "id": "d169",
+     "id": "d174",
      "cat": "Electronics",
      "item": "Power bank, under 100 Wh",
      "note": "Must go in cabin",
@@ -1239,7 +1270,7 @@
      "ship": false
     },
     {
-     "id": "d170",
+     "id": "d175",
      "cat": "Electronics",
      "item": "Cables and multi-plug adapter",
      "note": "",
@@ -1247,7 +1278,7 @@
      "ship": false
     },
     {
-     "id": "d171",
+     "id": "d176",
      "cat": "Electronics",
      "item": "Camera",
      "note": "",
@@ -1255,7 +1286,7 @@
      "ship": false
     },
     {
-     "id": "d172",
+     "id": "d177",
      "cat": "Documents & money",
      "item": "Passport with Schengen visa",
      "note": "",
@@ -1263,7 +1294,7 @@
      "ship": false
     },
     {
-     "id": "d173",
+     "id": "d178",
      "cat": "Documents & money",
      "item": "Residence permit card",
      "note": "Once issued",
@@ -1271,7 +1302,7 @@
      "ship": false
     },
     {
-     "id": "d174",
+     "id": "d179",
      "cat": "Documents & money",
      "item": "Insurance documents, printed",
      "note": "",
@@ -1279,7 +1310,7 @@
      "ship": false
     },
     {
-     "id": "d175",
+     "id": "d180",
      "cat": "Documents & money",
      "item": "Forex card plus one backup card",
      "note": "",
@@ -1287,7 +1318,7 @@
      "ship": false
     },
     {
-     "id": "d176",
+     "id": "d181",
      "cat": "Documents & money",
      "item": "Cash: EUR, NOK, CHF",
      "note": "",
@@ -1295,7 +1326,7 @@
      "ship": false
     },
     {
-     "id": "d177",
+     "id": "d182",
      "cat": "Health",
      "item": "Personal medication",
      "note": "",
@@ -1303,7 +1334,7 @@
      "ship": false
     },
     {
-     "id": "d178",
+     "id": "d183",
      "cat": "Health",
      "item": "Sunscreen and lip balm",
      "note": "Altitude and Atlantic sun",
@@ -1311,7 +1342,7 @@
      "ship": false
     },
     {
-     "id": "d179",
+     "id": "d184",
      "cat": "Health",
      "item": "Rehydration salts",
      "note": "",
@@ -1319,7 +1350,7 @@
      "ship": false
     },
     {
-     "id": "d180",
+     "id": "d185",
      "cat": "Health",
      "item": "Painkillers and anti-inflammatory",
      "note": "",
@@ -1329,182 +1360,182 @@
    ],
    "pre": [
     {
-     "id": "d181",
+     "id": "d186",
      "cat": "Documents",
      "item": "Passport, at least 6 months validity",
      "note": "",
      "done": false
     },
     {
-     "id": "d182",
+     "id": "d187",
      "cat": "Documents",
      "item": "Schengen visa — confirm multi-entry",
      "note": "",
      "done": false
     },
     {
-     "id": "d183",
+     "id": "d188",
      "cat": "Documents",
      "item": "Norway residence permit paperwork",
      "note": "",
      "done": false
     },
     {
-     "id": "d184",
+     "id": "d189",
      "cat": "Documents",
      "item": "Passport photos x4",
      "note": "",
      "done": false
     },
     {
-     "id": "d185",
+     "id": "d190",
      "cat": "Documents",
      "item": "Flight and accommodation printouts",
      "note": "",
      "done": false
     },
     {
-     "id": "d186",
+     "id": "d191",
      "cat": "Documents",
      "item": "Copies in cloud plus one paper set",
      "note": "",
      "done": false
     },
     {
-     "id": "d187",
+     "id": "d192",
      "cat": "Money",
      "item": "Load the forex card",
      "note": "",
      "done": false
     },
     {
-     "id": "d188",
+     "id": "d193",
      "cat": "Money",
      "item": "Tell the bank the travel dates",
      "note": "",
      "done": false
     },
     {
-     "id": "d189",
+     "id": "d194",
      "cat": "Money",
      "item": "Backup card packed separately",
      "note": "",
      "done": false
     },
     {
-     "id": "d190",
+     "id": "d195",
      "cat": "Money",
      "item": "Small EUR and NOK cash for arrival",
      "note": "",
      "done": false
     },
     {
-     "id": "d191",
+     "id": "d196",
      "cat": "Health",
      "item": "Prescriptions with a doctor letter",
      "note": "",
      "done": false
     },
     {
-     "id": "d192",
+     "id": "d197",
      "cat": "Health",
      "item": "Dental check before leaving",
      "note": "",
      "done": false
     },
     {
-     "id": "d193",
+     "id": "d198",
      "cat": "Health",
      "item": "Diving fitness declaration if the centre asks",
      "note": "",
      "done": false
     },
     {
-     "id": "d194",
+     "id": "d199",
      "cat": "Electronics",
      "item": "Universal adapter",
      "note": "",
      "done": false
     },
     {
-     "id": "d195",
+     "id": "d200",
      "cat": "Electronics",
      "item": "Power bank in cabin bag",
      "note": "",
      "done": false
     },
     {
-     "id": "d196",
+     "id": "d201",
      "cat": "Electronics",
      "item": "Unlocked phone and an eSIM plan",
      "note": "",
      "done": false
     },
     {
-     "id": "d197",
+     "id": "d202",
      "cat": "Gear from home",
      "item": "Boots — broken in, not new",
      "note": "",
      "done": false
     },
     {
-     "id": "d198",
+     "id": "d203",
      "cat": "Gear from home",
      "item": "Tent, bag, mat",
      "note": "",
      "done": false
     },
     {
-     "id": "d199",
+     "id": "d204",
      "cat": "Gear from home",
      "item": "Trekking poles in hold luggage",
      "note": "Not allowed in cabin",
      "done": false
     },
     {
-     "id": "d200",
+     "id": "d205",
      "cat": "Gear from home",
      "item": "Harness and climbing shoes",
      "note": "",
      "done": false
     },
     {
-     "id": "d201",
+     "id": "d206",
      "cat": "Gear from home",
      "item": "Dive computer and mask",
      "note": "",
      "done": false
     },
     {
-     "id": "d202",
+     "id": "d207",
      "cat": "Gear from home",
      "item": "Stove — empty, absolutely no gas",
      "note": "",
      "done": false
     },
     {
-     "id": "d203",
+     "id": "d208",
      "cat": "Home admin",
      "item": "IIMB paperwork and leave sorted",
      "note": "",
      "done": false
     },
     {
-     "id": "d204",
+     "id": "d209",
      "cat": "Home admin",
      "item": "Forward post, set up standing payments",
      "note": "",
      "done": false
     },
     {
-     "id": "d205",
+     "id": "d210",
      "cat": "Home admin",
      "item": "Share the itinerary with family",
      "note": "",
      "done": false
     },
     {
-     "id": "d206",
+     "id": "d211",
      "cat": "Home admin",
      "item": "Back up laptop and photos",
      "note": "",
@@ -1513,109 +1544,120 @@
    ],
    "reminders": [
     {
-     "id": "d207",
+     "id": "d212",
      "when": "2026-08-31",
      "text": "Book the P2 Skjeggedal to P3 Magelitopp shuttle — the upper shuttle stops 15 Sept and seats are limited",
      "done": false
     },
     {
-     "id": "d208",
+     "id": "d213",
      "when": "2026-08-31",
      "text": "Price Bergen to Odda on Entur or Skyss directly — aggregator quotes ranged 3x",
      "done": false
     },
     {
-     "id": "d209",
+     "id": "d214",
      "when": "2026-09-01",
      "text": "Order the DNT key online (NOK 100 refundable deposit) rather than relying on the Bergen office",
      "done": false
     },
     {
-     "id": "d210",
+     "id": "d215",
      "when": "2026-09-15",
      "text": "Confirm Fred Olsen sailing days for 8 and 12 Nov — crossings drop to about 5 a week from October",
      "done": false
     },
     {
-     "id": "d211",
+     "id": "d216",
      "when": "2026-09-05",
-     "text": "Book the Lofoten exit on 30 Sept — the plan gives that transition one day and it may need two",
+     "text": "Book Lofoten back to Bergen for 30 Sept — the 40 kg is in Bergen and the Amsterdam flight leaves from there",
      "done": false
     },
     {
-     "id": "d212",
+     "id": "d217",
+     "when": "2026-09-10",
+     "text": "Buy the second checked bag online when booking BGO-AMS. Two bags at 20 kg beats one at 40 kg — KLM heavy-bag fees are worse than an extra piece",
+     "done": false
+    },
+    {
+     "id": "d218",
+     "when": "2026-09-25",
+     "text": "Do NOT courier the luggage Norway to Netherlands. Norway is outside the EU customs union and the Dutch removal-goods exemption needs proof you are settling there, which you are not. Carry it as checked baggage",
+     "done": false
+    },
+    {
+     "id": "d219",
      "when": "2026-09-05",
      "text": "Email Folgefonni Glacier Team for the Jondal ferry-dock pickup at 11:10 — the packaged Bergen trip does not run in September",
      "done": false
     },
     {
-     "id": "d213",
+     "id": "d220",
      "when": "2026-09-08",
      "text": "Hike Trolltunga on 13 or 14 Sept while the upper shuttle still runs — saves 4 km and 400 m each way",
      "done": false
     },
     {
-     "id": "d214",
+     "id": "d221",
      "when": "2026-09-20",
      "text": "Call Skydive Bovec (+386 41 888 707) — ask about the minimum-numbers rule for a solo jump in October",
      "done": false
     },
     {
-     "id": "d215",
+     "id": "d222",
      "when": "2026-09-19",
      "text": "Book the Voss tandem for Sunday 20 Sept; the student discount only runs Mon-Fri, and Monday leaves no weather buffer",
      "done": false
     },
     {
-     "id": "d216",
+     "id": "d223",
      "when": "2026-09-15",
      "text": "Phone the three TMB winter rooms: Croix du Bonhomme, Elisabetta, Bonatti",
      "done": false
     },
     {
-     "id": "d217",
+     "id": "d224",
      "when": "2026-09-20",
      "text": "Camping des Glaciers La Fouly shuts 4 Oct — book a bed instead for the night of 23 Oct",
      "done": false
     },
     {
-     "id": "d218",
+     "id": "d225",
      "when": "2026-10-18",
      "text": "TMB go / no-go: chamonix-meteo plus the Chamonix and Courmayeur webcams",
      "done": false
     },
     {
-     "id": "d219",
+     "id": "d226",
      "when": "2026-10-25",
      "text": "Clocks go back tonight — dark by 17:30 for the last TMB days",
      "done": false
     },
     {
-     "id": "d220",
+     "id": "d227",
      "when": "2026-10-27",
      "text": "Post the alpine kit to Amsterdam FROM CHAMONIX: bag, mat, spikes, gaiters, shell, insulation, messenger. EU to EU — do not post from Geneva",
      "done": false
     },
     {
-     "id": "d221",
+     "id": "d228",
      "when": "2026-09-12",
      "text": "Decide the Lofoten question: keep it and add an Oslo overnight on 30 Sept, or swap to Jotunheimen and save two flights",
      "done": false
     },
     {
-     "id": "d222",
+     "id": "d229",
      "when": "2026-11-05",
      "text": "BOE medical questionnaire and dive insurance in hand before flying to El Hierro",
      "done": false
     },
     {
-     "id": "d223",
+     "id": "d230",
      "when": "2026-11-11",
      "text": "Last dive at least 24 h before the 13 Nov flight — no diving on the 12th",
      "done": false
     }
-   ],
-   "detours": {}
+   ]
   },
   "B": {
    "tripStart": "2026-09-10",
@@ -1802,7 +1844,7 @@
      ]
     },
     {
-     "id": "d224",
+     "id": "d231",
      "place": "Amsterdam",
      "tag": "transit",
      "nights": 3,
@@ -1811,19 +1853,19 @@
      "notes": "Arrive, unpack the Norway kit, resupply. Base established.",
      "items": [
       {
-       "id": "d225",
+       "id": "d232",
        "text": "Drop everything you will not need again",
        "kind": "Logistics",
        "done": false
       },
       {
-       "id": "d226",
+       "id": "d233",
        "text": "Buy the Italy and Spain half of the trip here",
        "kind": "Gear",
        "done": false
       },
       {
-       "id": "d227",
+       "id": "d234",
        "text": "Activate the Eurail pass",
        "kind": "Admin",
        "done": false
@@ -1831,7 +1873,7 @@
      ]
     },
     {
-     "id": "d228",
+     "id": "d235",
      "place": "Bovec, Slovenia",
      "tag": "adv",
      "nights": 4,
@@ -1840,25 +1882,25 @@
      "notes": "Includes the travel day in. Everything here winds down mid-October.",
      "items": [
       {
-       "id": "d229",
+       "id": "d236",
        "text": "Skydive Bovec",
        "kind": "Adventure — Fri to Sun operating pattern",
        "done": false
       },
       {
-       "id": "d230",
+       "id": "d237",
        "text": "Soca rafting or kayak",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d231",
+       "id": "d238",
        "text": "Susec canyoning",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d232",
+       "id": "d239",
        "text": "Lepena to Lake Krn",
        "kind": "Trek — 11.7 km, 888 m",
        "done": false
@@ -1866,7 +1908,7 @@
      ]
     },
     {
-     "id": "d233",
+     "id": "d240",
      "place": "Dolomites",
      "tag": "trek",
      "nights": 4,
@@ -1875,19 +1917,19 @@
      "notes": "Rifugi shut. Day hikes only, and both headline routes need lifts running.",
      "items": [
       {
-       "id": "d234",
+       "id": "d241",
        "text": "Tre Cime di Lavaredo loop",
        "kind": "Trek — 10.1 km, 493 m",
        "done": false
       },
       {
-       "id": "d235",
+       "id": "d242",
        "text": "Seceda via Col Raiser",
        "kind": "Trek — 10 km, 553 m",
        "done": false
       },
       {
-       "id": "d236",
+       "id": "d243",
        "text": "Via ferrata",
        "kind": "Adventure — weather dependent",
        "done": false
@@ -1895,7 +1937,7 @@
      ]
     },
     {
-     "id": "d237",
+     "id": "d244",
      "place": "Arco and Lake Garda",
      "tag": "adv",
      "nights": 3,
@@ -1904,19 +1946,19 @@
      "notes": "Peak season for the rock and the cheapest block of the trip.",
      "items": [
       {
-       "id": "d238",
+       "id": "d245",
        "text": "Sport climbing, Massone and Nago",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d239",
+       "id": "d246",
        "text": "Via ferrata, Monte Baldo",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d240",
+       "id": "d247",
        "text": "Paraglide Malcesine",
        "kind": "Adventure",
        "done": false
@@ -1924,7 +1966,7 @@
      ]
     },
     {
-     "id": "d241",
+     "id": "d248",
      "place": "Milan",
      "tag": "city",
      "nights": 2,
@@ -1933,19 +1975,19 @@
      "notes": "Lipstick, and the last city before the Alps.",
      "items": [
       {
-       "id": "d242",
+       "id": "d249",
        "text": "Lipstick — Rinascente beauty hall",
        "kind": "Errand",
        "done": false
       },
       {
-       "id": "d243",
+       "id": "d250",
        "text": "Duomo rooftop",
        "kind": "Sightseeing",
        "done": false
       },
       {
-       "id": "d244",
+       "id": "d251",
        "text": "Navigli in the evening",
        "kind": "Food",
        "done": false
@@ -1953,7 +1995,7 @@
      ]
     },
     {
-     "id": "d245",
+     "id": "d252",
      "place": "Amsterdam",
      "tag": "transit",
      "nights": 3,
@@ -1962,19 +2004,19 @@
      "notes": "The gear swap that justifies the hub model: drop the Italian kit, pick up full alpine.",
      "items": [
       {
-       "id": "d246",
+       "id": "d253",
        "text": "Swap to winter kit: bag, mat, spikes, gaiters, shell",
        "kind": "Logistics",
        "done": false
       },
       {
-       "id": "d247",
+       "id": "d254",
        "text": "Laundry and repairs",
        "kind": "Admin",
        "done": false
       },
       {
-       "id": "d248",
+       "id": "d255",
        "text": "Rest before nine days self-supported",
        "kind": "Recovery",
        "done": false
@@ -1982,7 +2024,7 @@
      ]
     },
     {
-     "id": "d249",
+     "id": "d256",
      "place": "Chamonix — buffer",
      "tag": "rest",
      "nights": 3,
@@ -1991,19 +2033,19 @@
      "notes": "Three buffer days now, not two — the one gain from a later TMB start.",
      "items": [
       {
-       "id": "d250",
+       "id": "d257",
        "text": "Go / no-go: chamonix-meteo plus webcams",
        "kind": "Decision",
        "done": false
       },
       {
-       "id": "d251",
+       "id": "d258",
        "text": "Buy 4 days of food and gas",
        "kind": "Resupply",
        "done": false
       },
       {
-       "id": "d252",
+       "id": "d259",
        "text": "Phone the three winter rooms",
        "kind": "Booking",
        "done": false
@@ -2011,7 +2053,7 @@
      ]
     },
     {
-     "id": "d253",
+     "id": "d260",
      "place": "Tour du Mont Blanc",
      "tag": "trek",
      "nights": 9,
@@ -2020,55 +2062,55 @@
      "notes": "23 to 31 October. Five days later than version A, in a month where five days matters.",
      "items": [
       {
-       "id": "d254",
+       "id": "d261",
        "text": "D1 Les Houches to Les Contamines",
        "kind": "18 km",
        "done": false
       },
       {
-       "id": "d255",
+       "id": "d262",
        "text": "D2 to Croix du Bonhomme",
        "kind": "13 km, +1,320",
        "done": false
       },
       {
-       "id": "d256",
+       "id": "d263",
        "text": "D3 over Col de la Seigne to Elisabetta",
        "kind": "21 km",
        "done": false
       },
       {
-       "id": "d257",
+       "id": "d264",
        "text": "D4 to Courmayeur",
        "kind": "18 km — resupply",
        "done": false
       },
       {
-       "id": "d258",
+       "id": "d265",
        "text": "D5 to Rifugio Bonatti",
        "kind": "12 km",
        "done": false
       },
       {
-       "id": "d259",
+       "id": "d266",
        "text": "D6 over Grand Col Ferret to La Fouly",
        "kind": "20 km",
        "done": false
       },
       {
-       "id": "d260",
+       "id": "d267",
        "text": "D7 to Champex-Lac",
        "kind": "15 km",
        "done": false
       },
       {
-       "id": "d261",
+       "id": "d268",
        "text": "D8 Champex to Trient via Bovine",
        "kind": "16 km",
        "done": false
       },
       {
-       "id": "d262",
+       "id": "d269",
        "text": "D9 Col de Balme to Tre-le-Champ",
        "kind": "13 km",
        "done": false
@@ -2076,7 +2118,7 @@
      ]
     },
     {
-     "id": "d263",
+     "id": "d270",
      "place": "Amsterdam",
      "tag": "transit",
      "nights": 3,
@@ -2085,19 +2127,19 @@
      "notes": "Drop the alpine kit for good. Recover.",
      "items": [
       {
-       "id": "d264",
+       "id": "d271",
        "text": "Drop winter kit at base",
        "kind": "Logistics",
        "done": false
       },
       {
-       "id": "d265",
+       "id": "d272",
        "text": "Laundry",
        "kind": "Admin",
        "done": false
       },
       {
-       "id": "d266",
+       "id": "d273",
        "text": "Dive paperwork: BOE form and insurance",
        "kind": "Booking",
        "done": false
@@ -2105,7 +2147,7 @@
      ]
     },
     {
-     "id": "d267",
+     "id": "d274",
      "place": "El Chorro",
      "tag": "adv",
      "nights": 4,
@@ -2114,19 +2156,19 @@
      "notes": "November is the season here. Includes the travel day in.",
      "items": [
       {
-       "id": "d268",
+       "id": "d275",
        "text": "Caminito del Rey",
        "kind": "Book well ahead, sells out",
        "done": false
       },
       {
-       "id": "d269",
+       "id": "d276",
        "text": "El Chorro sport crags",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d270",
+       "id": "d277",
        "text": "Malaga",
        "kind": "Rest day",
        "done": false
@@ -2134,7 +2176,7 @@
      ]
     },
     {
-     "id": "d271",
+     "id": "d278",
      "place": "El Hierro",
      "tag": "dive",
      "nights": 5,
@@ -2143,25 +2185,25 @@
      "notes": "Mar de las Calmas. Includes the travel days in and out.",
      "items": [
       {
-       "id": "d272",
+       "id": "d279",
        "text": "La Restinga dive days",
        "kind": "Dive — reserve",
        "done": false
       },
       {
-       "id": "d273",
+       "id": "d280",
        "text": "El Bajon seamount",
        "kind": "Dive",
        "done": false
       },
       {
-       "id": "d274",
+       "id": "d281",
        "text": "La Llania",
        "kind": "Trek — 7.2 km",
        "done": false
       },
       {
-       "id": "d275",
+       "id": "d282",
        "text": "Arco de la Tosca",
        "kind": "Trek — 5.8 km coastal",
        "done": false
@@ -2169,7 +2211,7 @@
      ]
     },
     {
-     "id": "d276",
+     "id": "d283",
      "place": "Amsterdam",
      "tag": "transit",
      "nights": 1,
@@ -2178,13 +2220,13 @@
      "notes": "Home. Tight: ferry and flight on the same day, which version A deliberately avoids.",
      "items": [
       {
-       "id": "d277",
+       "id": "d284",
        "text": "Ferry La Estaca to Los Cristianos, 2h20",
        "kind": "Transit — RISK",
        "done": false
       },
       {
-       "id": "d278",
+       "id": "d285",
        "text": "Fly TFS to Schiphol, direct",
        "kind": "Transit",
        "done": false
@@ -2194,350 +2236,357 @@
    ],
    "bookings": [
     {
-     "id": "d89",
+     "id": "d93",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Refuge Croix du Bonhomme — confirm October access and key",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d90",
+     "id": "d94",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Rifugio Elisabetta — confirm",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d91",
+     "id": "d95",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Rifugio Bonatti — confirm",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d92",
+     "id": "d96",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Courmayeur, night of 21 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d93",
+     "id": "d97",
      "group": "Tour du Mont Blanc",
      "what": "Bed in La Fouly, night of 23 Oct — campsite shuts 4 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d94",
+     "id": "d98",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Champex-Lac, night of 24 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d95",
+     "id": "d99",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Trient, night of 25 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d96",
+     "id": "d100",
      "group": "Tour du Mont Blanc",
      "what": "Val Veny and Val Ferret campsites — phone for October opening",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d97",
+     "id": "d101",
      "group": "Tour du Mont Blanc",
      "what": "Chamonix to Courmayeur tunnel bus timetable, for the bail",
      "deadline": "2026-10-10",
      "status": "todo"
     },
     {
-     "id": "d98",
+     "id": "d102",
      "group": "Tour du Mont Blanc",
      "what": "Alpine rescue insurance covering Italy and Switzerland",
      "deadline": "2026-09-30",
      "status": "todo"
     },
     {
-     "id": "d99",
+     "id": "d103",
      "group": "Tour du Mont Blanc",
      "what": "GPX on watch, plus paper map and compass",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d100",
+     "id": "d104",
      "group": "Flights",
-     "what": "Bergen to Ljubljana, 1 Oct",
-     "deadline": "2026-09-05",
-     "status": "todo"
-    },
-    {
-     "id": "d101",
-     "group": "Flights",
-     "what": "Bergen to Bodo or Evenes for Lofoten, ~26 Sept",
-     "deadline": "2026-09-05",
-     "status": "todo"
-    },
-    {
-     "id": "d102",
-     "group": "Flights",
-     "what": "Lofoten south to Oslo, 30 Sept — this leg was missing from the plan",
+     "what": "Bergen to Amsterdam, 1 Oct — KLM direct, 2 checked bags at 20 kg each",
      "deadline": "2026-09-05",
      "status": "todo"
     },
     {
      "id": "d105",
      "group": "Flights",
+     "what": "Amsterdam to Ljubljana, 4 Oct",
+     "deadline": "2026-09-20",
+     "status": "todo"
+    },
+    {
+     "id": "d106",
+     "group": "Flights",
+     "what": "Bergen to Bodo or Evenes for Lofoten, ~26 Sept",
+     "deadline": "2026-09-05",
+     "status": "todo"
+    },
+    {
+     "id": "d107",
+     "group": "Flights",
+     "what": "Lofoten back to Bergen, 30 Sept — the 40 kg is in Bergen, so Norway has to end there",
+     "deadline": "2026-09-05",
+     "status": "todo"
+    },
+    {
+     "id": "d110",
+     "group": "Flights",
      "what": "Tenerife South to Amsterdam Schiphol, 13 Nov — direct, Transavia or easyJet",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d106",
+     "id": "d111",
      "group": "Rail & ferry",
      "what": "Activate Eurail Global Pass on 1 Oct",
      "deadline": "2026-09-28",
      "status": "todo"
     },
     {
-     "id": "d107",
+     "id": "d112",
      "group": "Rail & ferry",
      "what": "Bergen railway seat to Finse",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d108",
+     "id": "d113",
      "group": "Rail & ferry",
      "what": "Ljubljana to Bovec bus",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d109",
+     "id": "d114",
      "group": "Rail & ferry",
      "what": "Milan to Chamonix, 16 Oct",
      "deadline": "2026-10-05",
      "status": "todo"
     },
     {
-     "id": "d110",
+     "id": "d115",
      "group": "Rail & ferry",
      "what": "Chamonix to Barcelona via Geneva and Montpellier, 27 Oct",
      "deadline": "2026-10-10",
      "status": "todo"
     },
     {
-     "id": "d112",
+     "id": "d117",
      "group": "Rail & ferry",
      "what": "Fred Olsen ferry Los Cristianos to El Hierro, 8 Nov — about 5 sailings a week Oct-May, confirm the day",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d113",
+     "id": "d118",
      "group": "Rail & ferry",
      "what": "Ferry El Hierro to Los Cristianos, 12 Nov — day before the flight, never on it",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d114",
+     "id": "d119",
      "group": "Stays",
      "what": "Voss, 20 to 21 Sept",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d115",
+     "id": "d120",
      "group": "Stays",
      "what": "Andalsnes, 22 to 25 Sept",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d116",
+     "id": "d121",
      "group": "Stays",
      "what": "Lofoten base, 26 to 30 Sept",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d117",
+     "id": "d122",
      "group": "Stays",
-     "what": "Bovec campsite, 2 to 4 Oct",
+     "what": "Bovec campsite, 5 to 7 Oct",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d118",
+     "id": "d123",
      "group": "Stays",
      "what": "Milan hotel, 14 to 15 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d119",
+     "id": "d124",
      "group": "Stays",
      "what": "Chamonix, 16 to 17 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d121",
+     "id": "d126",
      "group": "Stays",
      "what": "El Chorro, 2 to 5 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d122",
+     "id": "d127",
      "group": "Stays",
      "what": "La Restinga dive package with accommodation, 8 to 11 Nov",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d124",
+     "id": "d129",
      "group": "Activities",
      "what": "Skydive Voss slot",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d125",
+     "id": "d130",
      "group": "Activities",
      "what": "Folgefonna guided glacier walk — season ends late Sept",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d126",
+     "id": "d131",
      "group": "Activities",
      "what": "Naeroyfjord sea kayak, Flam",
      "deadline": "2026-09-14",
      "status": "todo"
     },
     {
-     "id": "d127",
+     "id": "d132",
      "group": "Activities",
      "what": "Bovec rafting and canyoning",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d128",
+     "id": "d133",
      "group": "Activities",
      "what": "Skydive Bovec tandem, 2 to 4 Oct — Skydive Bovec or SportMix, not Prostipad",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d129",
+     "id": "d134",
      "group": "Activities",
      "what": "Caminito del Rey tickets — sells out",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d130",
+     "id": "d135",
      "group": "Activities",
      "what": "El Hierro dive centre, 5 days",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d131",
+     "id": "d136",
      "group": "Admin",
      "what": "Police verification, 9 Sept",
      "deadline": "2026-09-09",
      "status": "todo"
     },
     {
-     "id": "d132",
+     "id": "d137",
      "group": "Admin",
      "what": "Collect residence permit card",
      "deadline": "2026-09-30",
      "status": "todo"
     },
     {
-     "id": "d133",
+     "id": "d138",
      "group": "Admin",
      "what": "DNT membership and universal hut key",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d134",
+     "id": "d139",
      "group": "Admin",
      "what": "Check the Schengen visa is multi-entry",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d135",
+     "id": "d140",
      "group": "Admin",
      "what": "Travel insurance including recreational diving to 30 m",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d136",
+     "id": "d141",
      "group": "Admin",
      "what": "Card that works across NOK, EUR and CHF",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d279",
+     "id": "d286",
      "group": "Flights",
      "what": "Lofoten to Schiphol, 1 Oct",
      "deadline": "2026-09-05",
      "status": "todo"
     },
     {
-     "id": "d280",
+     "id": "d287",
      "group": "Flights",
      "what": "Schiphol to Ljubljana, 4 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d281",
+     "id": "d288",
      "group": "Flights",
      "what": "Milan to Schiphol, 17 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d282",
+     "id": "d289",
      "group": "Flights",
      "what": "Schiphol to Geneva, 20 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d283",
+     "id": "d290",
      "group": "Flights",
      "what": "Geneva to Schiphol, 1 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d284",
+     "id": "d291",
      "group": "Flights",
      "what": "Schiphol to Malaga, 4 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d285",
+     "id": "d292",
      "group": "Flights",
      "what": "Malaga to Tenerife South, 8 Nov",
      "deadline": "2026-10-15",
@@ -2546,7 +2595,7 @@
    ],
    "kit": [
     {
-     "id": "d137",
+     "id": "d142",
      "cat": "Alpine & TMB",
      "item": "Tent, freestanding, good in wind",
      "note": "Used again in Spain — keep it with you",
@@ -2554,7 +2603,7 @@
      "ship": false
     },
     {
-     "id": "d138",
+     "id": "d143",
      "cat": "Alpine & TMB",
      "item": "Sleeping bag, comfort rated -7C",
      "note": "High camps run -5 to -8C in late Oct - post to Amsterdam 27 Oct",
@@ -2562,7 +2611,7 @@
      "ship": true
     },
     {
-     "id": "d139",
+     "id": "d144",
      "cat": "Alpine & TMB",
      "item": "Sleeping mat, R4 or better",
      "note": "",
@@ -2570,7 +2619,7 @@
      "ship": true
     },
     {
-     "id": "d140",
+     "id": "d145",
      "cat": "Alpine & TMB",
      "item": "Microspikes",
      "note": "",
@@ -2578,7 +2627,7 @@
      "ship": true
     },
     {
-     "id": "d141",
+     "id": "d146",
      "cat": "Alpine & TMB",
      "item": "Gaiters",
      "note": "",
@@ -2586,7 +2635,7 @@
      "ship": true
     },
     {
-     "id": "d142",
+     "id": "d147",
      "cat": "Alpine & TMB",
      "item": "Trekking poles",
      "note": "",
@@ -2594,7 +2643,7 @@
      "ship": false
     },
     {
-     "id": "d143",
+     "id": "d148",
      "cat": "Alpine & TMB",
      "item": "Stove and isobutane canisters",
      "note": "Buy gas in Europe — cannot fly with it",
@@ -2602,7 +2651,7 @@
      "ship": false
     },
     {
-     "id": "d144",
+     "id": "d149",
      "cat": "Alpine & TMB",
      "item": "Headtorch, spare, batteries",
      "note": "Dark by 17:30 after 25 Oct",
@@ -2610,7 +2659,7 @@
      "ship": false
     },
     {
-     "id": "d145",
+     "id": "d150",
      "cat": "Alpine & TMB",
      "item": "Satellite messenger",
      "note": "Rescue is billed in Italy and Switzerland",
@@ -2618,7 +2667,7 @@
      "ship": true
     },
     {
-     "id": "d146",
+     "id": "d151",
      "cat": "Alpine & TMB",
      "item": "Paper map and compass",
      "note": "Waymarks vanish under snow",
@@ -2626,7 +2675,7 @@
      "ship": false
     },
     {
-     "id": "d147",
+     "id": "d152",
      "cat": "Alpine & TMB",
      "item": "Water filter or tablets",
      "note": "",
@@ -2634,7 +2683,7 @@
      "ship": false
     },
     {
-     "id": "d148",
+     "id": "d153",
      "cat": "Alpine & TMB",
      "item": "First aid and blister kit",
      "note": "",
@@ -2642,7 +2691,7 @@
      "ship": false
     },
     {
-     "id": "d149",
+     "id": "d154",
      "cat": "Camp & sleep",
      "item": "Dry bags",
      "note": "",
@@ -2650,7 +2699,7 @@
      "ship": false
     },
     {
-     "id": "d150",
+     "id": "d155",
      "cat": "Camp & sleep",
      "item": "Repair kit and tape",
      "note": "",
@@ -2658,7 +2707,7 @@
      "ship": false
     },
     {
-     "id": "d151",
+     "id": "d156",
      "cat": "Camp & sleep",
      "item": "Camp towel",
      "note": "",
@@ -2666,7 +2715,7 @@
      "ship": false
     },
     {
-     "id": "d152",
+     "id": "d157",
      "cat": "Clothing",
      "item": "Hardshell jacket and trousers",
      "note": "",
@@ -2674,7 +2723,7 @@
      "ship": true
     },
     {
-     "id": "d153",
+     "id": "d158",
      "cat": "Clothing",
      "item": "Insulated jacket",
      "note": "",
@@ -2682,7 +2731,7 @@
      "ship": true
     },
     {
-     "id": "d154",
+     "id": "d159",
      "cat": "Clothing",
      "item": "Base layers x2",
      "note": "",
@@ -2690,7 +2739,7 @@
      "ship": false
     },
     {
-     "id": "d155",
+     "id": "d160",
      "cat": "Clothing",
      "item": "Fleece midlayer",
      "note": "",
@@ -2698,7 +2747,7 @@
      "ship": false
     },
     {
-     "id": "d156",
+     "id": "d161",
      "cat": "Clothing",
      "item": "Warm hat and gloves",
      "note": "",
@@ -2706,7 +2755,7 @@
      "ship": true
     },
     {
-     "id": "d157",
+     "id": "d162",
      "cat": "Clothing",
      "item": "Sun hat and sunglasses",
      "note": "",
@@ -2714,7 +2763,7 @@
      "ship": false
     },
     {
-     "id": "d158",
+     "id": "d163",
      "cat": "Clothing",
      "item": "Boots, broken in",
      "note": "",
@@ -2722,7 +2771,7 @@
      "ship": false
     },
     {
-     "id": "d159",
+     "id": "d164",
      "cat": "Clothing",
      "item": "Approach shoes",
      "note": "For the Spanish crags",
@@ -2730,7 +2779,7 @@
      "ship": false
     },
     {
-     "id": "d160",
+     "id": "d165",
      "cat": "Clothing",
      "item": "Swim shorts and quick-dry towel",
      "note": "",
@@ -2738,7 +2787,7 @@
      "ship": false
     },
     {
-     "id": "d161",
+     "id": "d166",
      "cat": "Climbing",
      "item": "Harness, shoes, chalk bag",
      "note": "",
@@ -2746,7 +2795,7 @@
      "ship": false
     },
     {
-     "id": "d162",
+     "id": "d167",
      "cat": "Climbing",
      "item": "Belay device and screwgate",
      "note": "",
@@ -2754,7 +2803,7 @@
      "ship": false
     },
     {
-     "id": "d163",
+     "id": "d168",
      "cat": "Climbing",
      "item": "Rope — or hire in Siurana",
      "note": "60 m; heavy to carry from India",
@@ -2762,7 +2811,7 @@
      "ship": false
     },
     {
-     "id": "d164",
+     "id": "d169",
      "cat": "Dive & water",
      "item": "Mask and snorkel",
      "note": "",
@@ -2770,7 +2819,7 @@
      "ship": false
     },
     {
-     "id": "d165",
+     "id": "d170",
      "cat": "Dive & water",
      "item": "Dive computer",
      "note": "",
@@ -2778,7 +2827,7 @@
      "ship": false
     },
     {
-     "id": "d166",
+     "id": "d171",
      "cat": "Dive & water",
      "item": "Logbook and certification card",
      "note": "",
@@ -2786,7 +2835,7 @@
      "ship": false
     },
     {
-     "id": "d167",
+     "id": "d172",
      "cat": "Dive & water",
      "item": "Rash guard",
      "note": "",
@@ -2794,7 +2843,7 @@
      "ship": false
     },
     {
-     "id": "d168",
+     "id": "d173",
      "cat": "Electronics",
      "item": "Phone with offline maps",
      "note": "Download Norway, Alps, Andalusia, El Hierro",
@@ -2802,7 +2851,7 @@
      "ship": false
     },
     {
-     "id": "d169",
+     "id": "d174",
      "cat": "Electronics",
      "item": "Power bank, under 100 Wh",
      "note": "Must go in cabin",
@@ -2810,7 +2859,7 @@
      "ship": false
     },
     {
-     "id": "d170",
+     "id": "d175",
      "cat": "Electronics",
      "item": "Cables and multi-plug adapter",
      "note": "",
@@ -2818,7 +2867,7 @@
      "ship": false
     },
     {
-     "id": "d171",
+     "id": "d176",
      "cat": "Electronics",
      "item": "Camera",
      "note": "",
@@ -2826,7 +2875,7 @@
      "ship": false
     },
     {
-     "id": "d172",
+     "id": "d177",
      "cat": "Documents & money",
      "item": "Passport with Schengen visa",
      "note": "",
@@ -2834,7 +2883,7 @@
      "ship": false
     },
     {
-     "id": "d173",
+     "id": "d178",
      "cat": "Documents & money",
      "item": "Residence permit card",
      "note": "Once issued",
@@ -2842,7 +2891,7 @@
      "ship": false
     },
     {
-     "id": "d174",
+     "id": "d179",
      "cat": "Documents & money",
      "item": "Insurance documents, printed",
      "note": "",
@@ -2850,7 +2899,7 @@
      "ship": false
     },
     {
-     "id": "d175",
+     "id": "d180",
      "cat": "Documents & money",
      "item": "Forex card plus one backup card",
      "note": "",
@@ -2858,7 +2907,7 @@
      "ship": false
     },
     {
-     "id": "d176",
+     "id": "d181",
      "cat": "Documents & money",
      "item": "Cash: EUR, NOK, CHF",
      "note": "",
@@ -2866,7 +2915,7 @@
      "ship": false
     },
     {
-     "id": "d177",
+     "id": "d182",
      "cat": "Health",
      "item": "Personal medication",
      "note": "",
@@ -2874,7 +2923,7 @@
      "ship": false
     },
     {
-     "id": "d178",
+     "id": "d183",
      "cat": "Health",
      "item": "Sunscreen and lip balm",
      "note": "Altitude and Atlantic sun",
@@ -2882,7 +2931,7 @@
      "ship": false
     },
     {
-     "id": "d179",
+     "id": "d184",
      "cat": "Health",
      "item": "Rehydration salts",
      "note": "",
@@ -2890,7 +2939,7 @@
      "ship": false
     },
     {
-     "id": "d180",
+     "id": "d185",
      "cat": "Health",
      "item": "Painkillers and anti-inflammatory",
      "note": "",
@@ -2900,182 +2949,182 @@
    ],
    "pre": [
     {
-     "id": "d181",
+     "id": "d186",
      "cat": "Documents",
      "item": "Passport, at least 6 months validity",
      "note": "",
      "done": false
     },
     {
-     "id": "d182",
+     "id": "d187",
      "cat": "Documents",
      "item": "Schengen visa — confirm multi-entry",
      "note": "",
      "done": false
     },
     {
-     "id": "d183",
+     "id": "d188",
      "cat": "Documents",
      "item": "Norway residence permit paperwork",
      "note": "",
      "done": false
     },
     {
-     "id": "d184",
+     "id": "d189",
      "cat": "Documents",
      "item": "Passport photos x4",
      "note": "",
      "done": false
     },
     {
-     "id": "d185",
+     "id": "d190",
      "cat": "Documents",
      "item": "Flight and accommodation printouts",
      "note": "",
      "done": false
     },
     {
-     "id": "d186",
+     "id": "d191",
      "cat": "Documents",
      "item": "Copies in cloud plus one paper set",
      "note": "",
      "done": false
     },
     {
-     "id": "d187",
+     "id": "d192",
      "cat": "Money",
      "item": "Load the forex card",
      "note": "",
      "done": false
     },
     {
-     "id": "d188",
+     "id": "d193",
      "cat": "Money",
      "item": "Tell the bank the travel dates",
      "note": "",
      "done": false
     },
     {
-     "id": "d189",
+     "id": "d194",
      "cat": "Money",
      "item": "Backup card packed separately",
      "note": "",
      "done": false
     },
     {
-     "id": "d190",
+     "id": "d195",
      "cat": "Money",
      "item": "Small EUR and NOK cash for arrival",
      "note": "",
      "done": false
     },
     {
-     "id": "d191",
+     "id": "d196",
      "cat": "Health",
      "item": "Prescriptions with a doctor letter",
      "note": "",
      "done": false
     },
     {
-     "id": "d192",
+     "id": "d197",
      "cat": "Health",
      "item": "Dental check before leaving",
      "note": "",
      "done": false
     },
     {
-     "id": "d193",
+     "id": "d198",
      "cat": "Health",
      "item": "Diving fitness declaration if the centre asks",
      "note": "",
      "done": false
     },
     {
-     "id": "d194",
+     "id": "d199",
      "cat": "Electronics",
      "item": "Universal adapter",
      "note": "",
      "done": false
     },
     {
-     "id": "d195",
+     "id": "d200",
      "cat": "Electronics",
      "item": "Power bank in cabin bag",
      "note": "",
      "done": false
     },
     {
-     "id": "d196",
+     "id": "d201",
      "cat": "Electronics",
      "item": "Unlocked phone and an eSIM plan",
      "note": "",
      "done": false
     },
     {
-     "id": "d197",
+     "id": "d202",
      "cat": "Gear from home",
      "item": "Boots — broken in, not new",
      "note": "",
      "done": false
     },
     {
-     "id": "d198",
+     "id": "d203",
      "cat": "Gear from home",
      "item": "Tent, bag, mat",
      "note": "",
      "done": false
     },
     {
-     "id": "d199",
+     "id": "d204",
      "cat": "Gear from home",
      "item": "Trekking poles in hold luggage",
      "note": "Not allowed in cabin",
      "done": false
     },
     {
-     "id": "d200",
+     "id": "d205",
      "cat": "Gear from home",
      "item": "Harness and climbing shoes",
      "note": "",
      "done": false
     },
     {
-     "id": "d201",
+     "id": "d206",
      "cat": "Gear from home",
      "item": "Dive computer and mask",
      "note": "",
      "done": false
     },
     {
-     "id": "d202",
+     "id": "d207",
      "cat": "Gear from home",
      "item": "Stove — empty, absolutely no gas",
      "note": "",
      "done": false
     },
     {
-     "id": "d203",
+     "id": "d208",
      "cat": "Home admin",
      "item": "IIMB paperwork and leave sorted",
      "note": "",
      "done": false
     },
     {
-     "id": "d204",
+     "id": "d209",
      "cat": "Home admin",
      "item": "Forward post, set up standing payments",
      "note": "",
      "done": false
     },
     {
-     "id": "d205",
+     "id": "d210",
      "cat": "Home admin",
      "item": "Share the itinerary with family",
      "note": "",
      "done": false
     },
     {
-     "id": "d206",
+     "id": "d211",
      "cat": "Home admin",
      "item": "Back up laptop and photos",
      "note": "",
@@ -3084,109 +3133,121 @@
    ],
    "reminders": [
     {
-     "id": "d207",
+     "id": "d212",
      "when": "2026-08-31",
      "text": "Book the P2 Skjeggedal to P3 Magelitopp shuttle — the upper shuttle stops 15 Sept and seats are limited",
      "done": false
     },
     {
-     "id": "d208",
+     "id": "d213",
      "when": "2026-08-31",
      "text": "Price Bergen to Odda on Entur or Skyss directly — aggregator quotes ranged 3x",
      "done": false
     },
     {
-     "id": "d209",
+     "id": "d214",
      "when": "2026-09-01",
      "text": "Order the DNT key online (NOK 100 refundable deposit) rather than relying on the Bergen office",
      "done": false
     },
     {
-     "id": "d210",
+     "id": "d215",
      "when": "2026-09-15",
      "text": "Confirm Fred Olsen sailing days for 8 and 12 Nov — crossings drop to about 5 a week from October",
      "done": false
     },
     {
-     "id": "d211",
+     "id": "d216",
      "when": "2026-09-05",
-     "text": "Book the Lofoten exit on 30 Sept — the plan gives that transition one day and it may need two",
+     "text": "Book Lofoten back to Bergen for 30 Sept — the 40 kg is in Bergen and the Amsterdam flight leaves from there",
      "done": false
     },
     {
-     "id": "d212",
+     "id": "d217",
+     "when": "2026-09-10",
+     "text": "Buy the second checked bag online when booking BGO-AMS. Two bags at 20 kg beats one at 40 kg — KLM heavy-bag fees are worse than an extra piece",
+     "done": false
+    },
+    {
+     "id": "d218",
+     "when": "2026-09-25",
+     "text": "Do NOT courier the luggage Norway to Netherlands. Norway is outside the EU customs union and the Dutch removal-goods exemption needs proof you are settling there, which you are not. Carry it as checked baggage",
+     "done": false
+    },
+    {
+     "id": "d219",
      "when": "2026-09-05",
      "text": "Email Folgefonni Glacier Team for the Jondal ferry-dock pickup at 11:10 — the packaged Bergen trip does not run in September",
      "done": false
     },
     {
-     "id": "d213",
+     "id": "d220",
      "when": "2026-09-08",
      "text": "Hike Trolltunga on 13 or 14 Sept while the upper shuttle still runs — saves 4 km and 400 m each way",
      "done": false
     },
     {
-     "id": "d214",
+     "id": "d221",
      "when": "2026-09-20",
      "text": "Call Skydive Bovec (+386 41 888 707) — ask about the minimum-numbers rule for a solo jump in October",
      "done": false
     },
     {
-     "id": "d215",
+     "id": "d222",
      "when": "2026-09-19",
      "text": "Book the Voss tandem for Sunday 20 Sept; the student discount only runs Mon-Fri, and Monday leaves no weather buffer",
      "done": false
     },
     {
-     "id": "d216",
+     "id": "d223",
      "when": "2026-09-15",
      "text": "Phone the three TMB winter rooms: Croix du Bonhomme, Elisabetta, Bonatti",
      "done": false
     },
     {
-     "id": "d217",
+     "id": "d224",
      "when": "2026-09-20",
      "text": "Camping des Glaciers La Fouly shuts 4 Oct — book a bed instead for the night of 23 Oct",
      "done": false
     },
     {
-     "id": "d218",
+     "id": "d225",
      "when": "2026-10-18",
      "text": "TMB go / no-go: chamonix-meteo plus the Chamonix and Courmayeur webcams",
      "done": false
     },
     {
-     "id": "d219",
+     "id": "d226",
      "when": "2026-10-25",
      "text": "Clocks go back tonight — dark by 17:30 for the last TMB days",
      "done": false
     },
     {
-     "id": "d221",
+     "id": "d228",
      "when": "2026-09-12",
      "text": "Decide the Lofoten question: keep it and add an Oslo overnight on 30 Sept, or swap to Jotunheimen and save two flights",
      "done": false
     },
     {
-     "id": "d222",
+     "id": "d229",
      "when": "2026-11-05",
      "text": "BOE medical questionnaire and dive insurance in hand before flying to El Hierro",
      "done": false
     },
     {
-     "id": "d223",
+     "id": "d230",
      "when": "2026-11-11",
      "text": "Last dive at least 24 h before the 13 Nov flight — no diving on the 12th",
      "done": false
     },
     {
-     "id": "d286",
+     "id": "d293",
      "when": "2026-11-11",
      "text": "Version B lands the ferry and the flight on the same day, 13 Nov. A cancelled crossing means a missed international flight — consider buying a Los Cristianos night back",
      "done": false
     },
     {
-     "id": "d287",
+     "id": "d294",
      "when": "2026-10-01",
      "text": "Gear swap at base on 17-19 Oct is what this version is for — leave the alpine kit in Amsterdam on arrival, collect it before Chamonix",
      "done": false
@@ -3378,7 +3439,7 @@
      ]
     },
     {
-     "id": "d288",
+     "id": "d295",
      "place": "North to Ljubljana by rail",
      "tag": "transit",
      "nights": 4,
@@ -3387,43 +3448,43 @@
      "notes": "Four days, no flights, no baggage fees. The pass covers all of it; Oslo to Copenhagen needs no reservation at all.",
      "items": [
       {
-       "id": "d289",
+       "id": "d296",
        "text": "Ferry Moskenes to Bodo",
        "kind": "Transit — 3.5 h",
        "done": false
       },
       {
-       "id": "d290",
+       "id": "d297",
        "text": "Night train Bodo to Trondheim",
        "kind": "Transit — sleeps a night",
        "done": false
       },
       {
-       "id": "d291",
+       "id": "d298",
        "text": "Trondheim to Oslo",
        "kind": "Transit — 6.5 h",
        "done": false
       },
       {
-       "id": "d292",
+       "id": "d299",
        "text": "Oslo to Goteborg to Copenhagen",
        "kind": "Transit — no reservation needed",
        "done": false
       },
       {
-       "id": "d293",
+       "id": "d300",
        "text": "Copenhagen to Hamburg",
        "kind": "Transit — reservation optional in October",
        "done": false
       },
       {
-       "id": "d294",
+       "id": "d301",
        "text": "Nightjet Hamburg to Vienna, or Hamburg to Munich by day",
        "kind": "Transit",
        "done": false
       },
       {
-       "id": "d295",
+       "id": "d302",
        "text": "Munich or Vienna to Ljubljana",
        "kind": "Transit — EC via Villach and Jesenice",
        "done": false
@@ -3431,7 +3492,7 @@
      ]
     },
     {
-     "id": "d296",
+     "id": "d303",
      "place": "Bovec, Slovenia",
      "tag": "adv",
      "nights": 3,
@@ -3440,25 +3501,25 @@
      "notes": "Everything here winds down mid-October.",
      "items": [
       {
-       "id": "d297",
+       "id": "d304",
        "text": "Skydive Bovec",
        "kind": "Adventure — Fri to Sun",
        "done": false
       },
       {
-       "id": "d298",
+       "id": "d305",
        "text": "Soca rafting or kayak",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d299",
+       "id": "d306",
        "text": "Susec canyoning",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d300",
+       "id": "d307",
        "text": "Lepena to Lake Krn",
        "kind": "Trek — 11.7 km, 888 m",
        "done": false
@@ -3466,7 +3527,7 @@
      ]
     },
     {
-     "id": "d301",
+     "id": "d308",
      "place": "Dolomites",
      "tag": "trek",
      "nights": 3,
@@ -3475,19 +3536,19 @@
      "notes": "Trimmed to three days to protect the TMB start date.",
      "items": [
       {
-       "id": "d302",
+       "id": "d309",
        "text": "Tre Cime di Lavaredo loop",
        "kind": "Trek — 10.1 km",
        "done": false
       },
       {
-       "id": "d303",
+       "id": "d310",
        "text": "Seceda via Col Raiser",
        "kind": "Trek — 10 km",
        "done": false
       },
       {
-       "id": "d304",
+       "id": "d311",
        "text": "Lago di Braies",
        "kind": "Short walk",
        "done": false
@@ -3495,7 +3556,7 @@
      ]
     },
     {
-     "id": "d305",
+     "id": "d312",
      "place": "Arco and Lake Garda",
      "tag": "adv",
      "nights": 3,
@@ -3504,19 +3565,19 @@
      "notes": "Peak season for the rock.",
      "items": [
       {
-       "id": "d306",
+       "id": "d313",
        "text": "Sport climbing, Massone and Nago",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d307",
+       "id": "d314",
        "text": "Via ferrata, Monte Baldo",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d308",
+       "id": "d315",
        "text": "Paraglide Malcesine",
        "kind": "Adventure",
        "done": false
@@ -3524,7 +3585,7 @@
      ]
     },
     {
-     "id": "d309",
+     "id": "d316",
      "place": "Milan",
      "tag": "city",
      "nights": 2,
@@ -3533,19 +3594,19 @@
      "notes": "Lipstick and the last resupply before the Alps.",
      "items": [
       {
-       "id": "d310",
+       "id": "d317",
        "text": "Lipstick — Rinascente beauty hall",
        "kind": "Errand",
        "done": false
       },
       {
-       "id": "d311",
+       "id": "d318",
        "text": "Alpine kit top-up",
        "kind": "Gear",
        "done": false
       },
       {
-       "id": "d312",
+       "id": "d319",
        "text": "Duomo rooftop",
        "kind": "Sightseeing",
        "done": false
@@ -3553,7 +3614,7 @@
      ]
     },
     {
-     "id": "d313",
+     "id": "d320",
      "place": "Chamonix — buffer",
      "tag": "rest",
      "nights": 2,
@@ -3562,19 +3623,19 @@
      "notes": "The prettiest approach of the three versions, and entirely on the pass.",
      "items": [
       {
-       "id": "d314",
+       "id": "d321",
        "text": "Go / no-go: chamonix-meteo plus webcams",
        "kind": "Decision",
        "done": false
       },
       {
-       "id": "d315",
+       "id": "d322",
        "text": "Buy 4 days of food and gas",
        "kind": "Resupply",
        "done": false
       },
       {
-       "id": "d316",
+       "id": "d323",
        "text": "Phone the three winter rooms",
        "kind": "Booking",
        "done": false
@@ -3582,7 +3643,7 @@
      ]
     },
     {
-     "id": "d317",
+     "id": "d324",
      "place": "Tour du Mont Blanc",
      "tag": "trek",
      "nights": 9,
@@ -3591,55 +3652,55 @@
      "notes": "18 to 26 October — the same window as version A. Losing the Canaries is what protects it.",
      "items": [
       {
-       "id": "d318",
+       "id": "d325",
        "text": "D1 Les Houches to Les Contamines",
        "kind": "18 km",
        "done": false
       },
       {
-       "id": "d319",
+       "id": "d326",
        "text": "D2 to Croix du Bonhomme",
        "kind": "13 km, +1,320",
        "done": false
       },
       {
-       "id": "d320",
+       "id": "d327",
        "text": "D3 over Col de la Seigne to Elisabetta",
        "kind": "21 km",
        "done": false
       },
       {
-       "id": "d321",
+       "id": "d328",
        "text": "D4 to Courmayeur",
        "kind": "18 km — resupply",
        "done": false
       },
       {
-       "id": "d322",
+       "id": "d329",
        "text": "D5 to Rifugio Bonatti",
        "kind": "12 km",
        "done": false
       },
       {
-       "id": "d323",
+       "id": "d330",
        "text": "D6 over Grand Col Ferret to La Fouly",
        "kind": "20 km",
        "done": false
       },
       {
-       "id": "d324",
+       "id": "d331",
        "text": "D7 to Champex-Lac",
        "kind": "15 km",
        "done": false
       },
       {
-       "id": "d325",
+       "id": "d332",
        "text": "D8 Champex to Trient via Bovine",
        "kind": "16 km",
        "done": false
       },
       {
-       "id": "d326",
+       "id": "d333",
        "text": "D9 Col de Balme to Tre-le-Champ",
        "kind": "13 km",
        "done": false
@@ -3647,7 +3708,7 @@
      ]
     },
     {
-     "id": "d327",
+     "id": "d334",
      "place": "Chamonix to Barcelona",
      "tag": "transit",
      "nights": 2,
@@ -3656,13 +3717,13 @@
      "notes": "Post the alpine kit to Amsterdam from Chamonix. One rest day.",
      "items": [
       {
-       "id": "d328",
+       "id": "d335",
        "text": "Post winter bag, mat and spikes to Amsterdam",
        "kind": "Logistics — EU to EU",
        "done": false
       },
       {
-       "id": "d329",
+       "id": "d336",
        "text": "Laundry and resupply",
        "kind": "Admin",
        "done": false
@@ -3670,7 +3731,7 @@
      ]
     },
     {
-     "id": "d330",
+     "id": "d337",
      "place": "Siurana and Margalef",
      "tag": "adv",
      "nights": 4,
@@ -3679,19 +3740,19 @@
      "notes": "Prime-season limestone and the tent works again.",
      "items": [
       {
-       "id": "d331",
+       "id": "d338",
        "text": "Siurana sport climbing",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d332",
+       "id": "d339",
        "text": "Margalef pockets",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d333",
+       "id": "d340",
        "text": "Montserrat multi-pitch",
        "kind": "Adventure — optional",
        "done": false
@@ -3699,7 +3760,7 @@
      ]
     },
     {
-     "id": "d334",
+     "id": "d341",
      "place": "El Chorro",
      "tag": "adv",
      "nights": 4,
@@ -3708,19 +3769,19 @@
      "notes": "El Chorro has its own station on the Caminito line.",
      "items": [
       {
-       "id": "d335",
+       "id": "d342",
        "text": "Caminito del Rey",
        "kind": "Book well ahead, sells out",
        "done": false
       },
       {
-       "id": "d336",
+       "id": "d343",
        "text": "El Chorro sport crags",
        "kind": "Adventure",
        "done": false
       },
       {
-       "id": "d337",
+       "id": "d344",
        "text": "Malaga",
        "kind": "Rest day",
        "done": false
@@ -3728,7 +3789,7 @@
      ]
     },
     {
-     "id": "d338",
+     "id": "d345",
      "place": "Cabo de Gata",
      "tag": "dive",
      "nights": 4,
@@ -3737,25 +3798,25 @@
      "notes": "The rail-reachable dive. Replaces El Hierro and removes three flights.",
      "items": [
       {
-       "id": "d339",
+       "id": "d346",
        "text": "Guided dives, Arrecife de las Sirenas",
        "kind": "Dive — reserve in advance, park rules",
        "done": false
       },
       {
-       "id": "d340",
+       "id": "d347",
        "text": "Wreck of the Vapor Arna, sunk 1928",
        "kind": "Dive",
        "done": false
       },
       {
-       "id": "d341",
+       "id": "d348",
        "text": "Volcanic caves and grottos",
        "kind": "Dive",
        "done": false
       },
       {
-       "id": "d342",
+       "id": "d349",
        "text": "Rodalquilar and the coastal path",
        "kind": "Walk",
        "done": false
@@ -3763,7 +3824,7 @@
      ]
     },
     {
-     "id": "d343",
+     "id": "d350",
      "place": "Rail north to Amsterdam",
      "tag": "transit",
      "nights": 4,
@@ -3772,31 +3833,31 @@
      "notes": "Four days home overland. The reservation-heavy stretch of the whole trip.",
      "items": [
       {
-       "id": "d344",
+       "id": "d351",
        "text": "Almeria to Madrid Atocha",
        "kind": "Transit",
        "done": false
       },
       {
-       "id": "d345",
+       "id": "d352",
        "text": "Madrid to Barcelona Sants",
        "kind": "Transit — AVE, reservation required",
        "done": false
       },
       {
-       "id": "d346",
+       "id": "d353",
        "text": "Barcelona to Montpellier",
        "kind": "Transit — reservation required",
        "done": false
       },
       {
-       "id": "d347",
+       "id": "d354",
        "text": "Montpellier to Paris",
        "kind": "Transit — TGV, reservation required",
        "done": false
       },
       {
-       "id": "d348",
+       "id": "d355",
        "text": "Paris to Brussels to Amsterdam Centraal",
        "kind": "Transit",
        "done": false
@@ -3806,315 +3867,315 @@
    ],
    "bookings": [
     {
-     "id": "d89",
+     "id": "d93",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Refuge Croix du Bonhomme — confirm October access and key",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d90",
+     "id": "d94",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Rifugio Elisabetta — confirm",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d91",
+     "id": "d95",
      "group": "Tour du Mont Blanc",
      "what": "Winter room, Rifugio Bonatti — confirm",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d92",
+     "id": "d96",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Courmayeur, night of 21 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d93",
+     "id": "d97",
      "group": "Tour du Mont Blanc",
      "what": "Bed in La Fouly, night of 23 Oct — campsite shuts 4 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d94",
+     "id": "d98",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Champex-Lac, night of 24 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d95",
+     "id": "d99",
      "group": "Tour du Mont Blanc",
      "what": "Bed in Trient, night of 25 Oct",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d96",
+     "id": "d100",
      "group": "Tour du Mont Blanc",
      "what": "Val Veny and Val Ferret campsites — phone for October opening",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d97",
+     "id": "d101",
      "group": "Tour du Mont Blanc",
      "what": "Chamonix to Courmayeur tunnel bus timetable, for the bail",
      "deadline": "2026-10-10",
      "status": "todo"
     },
     {
-     "id": "d98",
+     "id": "d102",
      "group": "Tour du Mont Blanc",
      "what": "Alpine rescue insurance covering Italy and Switzerland",
      "deadline": "2026-09-30",
      "status": "todo"
     },
     {
-     "id": "d99",
+     "id": "d103",
      "group": "Tour du Mont Blanc",
      "what": "GPX on watch, plus paper map and compass",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d106",
+     "id": "d111",
      "group": "Rail & ferry",
      "what": "Activate Eurail Global Pass on 1 Oct",
      "deadline": "2026-09-28",
      "status": "todo"
     },
     {
-     "id": "d107",
+     "id": "d112",
      "group": "Rail & ferry",
      "what": "Bergen railway seat to Finse",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d108",
+     "id": "d113",
      "group": "Rail & ferry",
      "what": "Ljubljana to Bovec bus",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d109",
+     "id": "d114",
      "group": "Rail & ferry",
      "what": "Milan to Chamonix, 16 Oct",
      "deadline": "2026-10-05",
      "status": "todo"
     },
     {
-     "id": "d110",
+     "id": "d115",
      "group": "Rail & ferry",
      "what": "Chamonix to Barcelona via Geneva and Montpellier, 27 Oct",
      "deadline": "2026-10-10",
      "status": "todo"
     },
     {
-     "id": "d114",
+     "id": "d119",
      "group": "Stays",
      "what": "Voss, 20 to 21 Sept",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d115",
+     "id": "d120",
      "group": "Stays",
      "what": "Andalsnes, 22 to 25 Sept",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d116",
+     "id": "d121",
      "group": "Stays",
      "what": "Lofoten base, 26 to 30 Sept",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d117",
+     "id": "d122",
      "group": "Stays",
-     "what": "Bovec campsite, 2 to 4 Oct",
+     "what": "Bovec campsite, 5 to 7 Oct",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d118",
+     "id": "d123",
      "group": "Stays",
      "what": "Milan hotel, 14 to 15 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d119",
+     "id": "d124",
      "group": "Stays",
      "what": "Chamonix, 16 to 17 Oct",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d120",
+     "id": "d125",
      "group": "Stays",
      "what": "Camping Siurana, 29 Oct to 1 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d121",
+     "id": "d126",
      "group": "Stays",
      "what": "El Chorro, 2 to 5 Nov",
      "deadline": "2026-10-15",
      "status": "todo"
     },
     {
-     "id": "d124",
+     "id": "d129",
      "group": "Activities",
      "what": "Skydive Voss slot",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d125",
+     "id": "d130",
      "group": "Activities",
      "what": "Folgefonna guided glacier walk — season ends late Sept",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d126",
+     "id": "d131",
      "group": "Activities",
      "what": "Naeroyfjord sea kayak, Flam",
      "deadline": "2026-09-14",
      "status": "todo"
     },
     {
-     "id": "d127",
+     "id": "d132",
      "group": "Activities",
      "what": "Bovec rafting and canyoning",
      "deadline": "2026-09-25",
      "status": "todo"
     },
     {
-     "id": "d128",
+     "id": "d133",
      "group": "Activities",
      "what": "Skydive Bovec tandem, 2 to 4 Oct — Skydive Bovec or SportMix, not Prostipad",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d129",
+     "id": "d134",
      "group": "Activities",
      "what": "Caminito del Rey tickets — sells out",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d130",
+     "id": "d135",
      "group": "Activities",
      "what": "El Hierro dive centre, 5 days",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d131",
+     "id": "d136",
      "group": "Admin",
      "what": "Police verification, 9 Sept",
      "deadline": "2026-09-09",
      "status": "todo"
     },
     {
-     "id": "d132",
+     "id": "d137",
      "group": "Admin",
      "what": "Collect residence permit card",
      "deadline": "2026-09-30",
      "status": "todo"
     },
     {
-     "id": "d133",
+     "id": "d138",
      "group": "Admin",
      "what": "DNT membership and universal hut key",
      "deadline": "2026-09-10",
      "status": "todo"
     },
     {
-     "id": "d134",
+     "id": "d139",
      "group": "Admin",
      "what": "Check the Schengen visa is multi-entry",
      "deadline": "2026-09-01",
      "status": "todo"
     },
     {
-     "id": "d135",
+     "id": "d140",
      "group": "Admin",
      "what": "Travel insurance including recreational diving to 30 m",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d136",
+     "id": "d141",
      "group": "Admin",
      "what": "Card that works across NOK, EUR and CHF",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d349",
+     "id": "d356",
      "group": "Rail & ferry",
      "what": "Vy reservation, Bergen to Oslo",
      "deadline": "2026-09-12",
      "status": "todo"
     },
     {
-     "id": "d350",
+     "id": "d357",
      "group": "Rail & ferry",
      "what": "Moskenes to Bodo ferry, 1 Oct — not covered by the pass",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d351",
+     "id": "d358",
      "group": "Rail & ferry",
      "what": "Night train Bodo to Trondheim, 1 Oct — berth",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d352",
+     "id": "d359",
      "group": "Rail & ferry",
      "what": "Nightjet Hamburg to Vienna, 3 Oct — couchette, not sleeper",
      "deadline": "2026-09-15",
      "status": "todo"
     },
     {
-     "id": "d353",
+     "id": "d360",
      "group": "Rail & ferry",
      "what": "AVE Madrid to Barcelona, 11 Nov — passholder quota is small, book early",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d354",
+     "id": "d361",
      "group": "Rail & ferry",
      "what": "TGV Montpellier to Paris, 12 Nov — passholder quota is small, book early",
      "deadline": "2026-10-01",
      "status": "todo"
     },
     {
-     "id": "d355",
+     "id": "d362",
      "group": "Activities",
      "what": "Cabo de Gata guided dives, 6 to 9 Nov — park rules require advance booking",
      "deadline": "2026-09-20",
      "status": "todo"
     },
     {
-     "id": "d356",
+     "id": "d363",
      "group": "Stays",
      "what": "San Jose or Las Negras, 6 to 9 Nov",
      "deadline": "2026-10-15",
@@ -4123,7 +4184,7 @@
    ],
    "kit": [
     {
-     "id": "d137",
+     "id": "d142",
      "cat": "Alpine & TMB",
      "item": "Tent, freestanding, good in wind",
      "note": "Used again in Spain — keep it with you",
@@ -4131,7 +4192,7 @@
      "ship": false
     },
     {
-     "id": "d138",
+     "id": "d143",
      "cat": "Alpine & TMB",
      "item": "Sleeping bag, comfort rated -7C",
      "note": "High camps run -5 to -8C in late Oct - post to Amsterdam 27 Oct",
@@ -4139,7 +4200,7 @@
      "ship": true
     },
     {
-     "id": "d139",
+     "id": "d144",
      "cat": "Alpine & TMB",
      "item": "Sleeping mat, R4 or better",
      "note": "",
@@ -4147,7 +4208,7 @@
      "ship": true
     },
     {
-     "id": "d140",
+     "id": "d145",
      "cat": "Alpine & TMB",
      "item": "Microspikes",
      "note": "",
@@ -4155,7 +4216,7 @@
      "ship": true
     },
     {
-     "id": "d141",
+     "id": "d146",
      "cat": "Alpine & TMB",
      "item": "Gaiters",
      "note": "",
@@ -4163,7 +4224,7 @@
      "ship": true
     },
     {
-     "id": "d142",
+     "id": "d147",
      "cat": "Alpine & TMB",
      "item": "Trekking poles",
      "note": "",
@@ -4171,7 +4232,7 @@
      "ship": false
     },
     {
-     "id": "d143",
+     "id": "d148",
      "cat": "Alpine & TMB",
      "item": "Stove and isobutane canisters",
      "note": "Buy gas in Europe — cannot fly with it",
@@ -4179,7 +4240,7 @@
      "ship": false
     },
     {
-     "id": "d144",
+     "id": "d149",
      "cat": "Alpine & TMB",
      "item": "Headtorch, spare, batteries",
      "note": "Dark by 17:30 after 25 Oct",
@@ -4187,7 +4248,7 @@
      "ship": false
     },
     {
-     "id": "d145",
+     "id": "d150",
      "cat": "Alpine & TMB",
      "item": "Satellite messenger",
      "note": "Rescue is billed in Italy and Switzerland",
@@ -4195,7 +4256,7 @@
      "ship": true
     },
     {
-     "id": "d146",
+     "id": "d151",
      "cat": "Alpine & TMB",
      "item": "Paper map and compass",
      "note": "Waymarks vanish under snow",
@@ -4203,7 +4264,7 @@
      "ship": false
     },
     {
-     "id": "d147",
+     "id": "d152",
      "cat": "Alpine & TMB",
      "item": "Water filter or tablets",
      "note": "",
@@ -4211,7 +4272,7 @@
      "ship": false
     },
     {
-     "id": "d148",
+     "id": "d153",
      "cat": "Alpine & TMB",
      "item": "First aid and blister kit",
      "note": "",
@@ -4219,7 +4280,7 @@
      "ship": false
     },
     {
-     "id": "d149",
+     "id": "d154",
      "cat": "Camp & sleep",
      "item": "Dry bags",
      "note": "",
@@ -4227,7 +4288,7 @@
      "ship": false
     },
     {
-     "id": "d150",
+     "id": "d155",
      "cat": "Camp & sleep",
      "item": "Repair kit and tape",
      "note": "",
@@ -4235,7 +4296,7 @@
      "ship": false
     },
     {
-     "id": "d151",
+     "id": "d156",
      "cat": "Camp & sleep",
      "item": "Camp towel",
      "note": "",
@@ -4243,7 +4304,7 @@
      "ship": false
     },
     {
-     "id": "d152",
+     "id": "d157",
      "cat": "Clothing",
      "item": "Hardshell jacket and trousers",
      "note": "",
@@ -4251,7 +4312,7 @@
      "ship": true
     },
     {
-     "id": "d153",
+     "id": "d158",
      "cat": "Clothing",
      "item": "Insulated jacket",
      "note": "",
@@ -4259,7 +4320,7 @@
      "ship": true
     },
     {
-     "id": "d154",
+     "id": "d159",
      "cat": "Clothing",
      "item": "Base layers x2",
      "note": "",
@@ -4267,7 +4328,7 @@
      "ship": false
     },
     {
-     "id": "d155",
+     "id": "d160",
      "cat": "Clothing",
      "item": "Fleece midlayer",
      "note": "",
@@ -4275,7 +4336,7 @@
      "ship": false
     },
     {
-     "id": "d156",
+     "id": "d161",
      "cat": "Clothing",
      "item": "Warm hat and gloves",
      "note": "",
@@ -4283,7 +4344,7 @@
      "ship": true
     },
     {
-     "id": "d157",
+     "id": "d162",
      "cat": "Clothing",
      "item": "Sun hat and sunglasses",
      "note": "",
@@ -4291,7 +4352,7 @@
      "ship": false
     },
     {
-     "id": "d158",
+     "id": "d163",
      "cat": "Clothing",
      "item": "Boots, broken in",
      "note": "",
@@ -4299,7 +4360,7 @@
      "ship": false
     },
     {
-     "id": "d159",
+     "id": "d164",
      "cat": "Clothing",
      "item": "Approach shoes",
      "note": "For the Spanish crags",
@@ -4307,7 +4368,7 @@
      "ship": false
     },
     {
-     "id": "d160",
+     "id": "d165",
      "cat": "Clothing",
      "item": "Swim shorts and quick-dry towel",
      "note": "",
@@ -4315,7 +4376,7 @@
      "ship": false
     },
     {
-     "id": "d161",
+     "id": "d166",
      "cat": "Climbing",
      "item": "Harness, shoes, chalk bag",
      "note": "",
@@ -4323,7 +4384,7 @@
      "ship": false
     },
     {
-     "id": "d162",
+     "id": "d167",
      "cat": "Climbing",
      "item": "Belay device and screwgate",
      "note": "",
@@ -4331,7 +4392,7 @@
      "ship": false
     },
     {
-     "id": "d163",
+     "id": "d168",
      "cat": "Climbing",
      "item": "Rope — or hire in Siurana",
      "note": "60 m; heavy to carry from India",
@@ -4339,7 +4400,7 @@
      "ship": false
     },
     {
-     "id": "d164",
+     "id": "d169",
      "cat": "Dive & water",
      "item": "Mask and snorkel",
      "note": "",
@@ -4347,7 +4408,7 @@
      "ship": false
     },
     {
-     "id": "d165",
+     "id": "d170",
      "cat": "Dive & water",
      "item": "Dive computer",
      "note": "",
@@ -4355,7 +4416,7 @@
      "ship": false
     },
     {
-     "id": "d166",
+     "id": "d171",
      "cat": "Dive & water",
      "item": "Logbook and certification card",
      "note": "",
@@ -4363,7 +4424,7 @@
      "ship": false
     },
     {
-     "id": "d167",
+     "id": "d172",
      "cat": "Dive & water",
      "item": "Rash guard",
      "note": "",
@@ -4371,7 +4432,7 @@
      "ship": false
     },
     {
-     "id": "d168",
+     "id": "d173",
      "cat": "Electronics",
      "item": "Phone with offline maps",
      "note": "Download Norway, Alps, Andalusia, El Hierro",
@@ -4379,7 +4440,7 @@
      "ship": false
     },
     {
-     "id": "d169",
+     "id": "d174",
      "cat": "Electronics",
      "item": "Power bank, under 100 Wh",
      "note": "Must go in cabin",
@@ -4387,7 +4448,7 @@
      "ship": false
     },
     {
-     "id": "d170",
+     "id": "d175",
      "cat": "Electronics",
      "item": "Cables and multi-plug adapter",
      "note": "",
@@ -4395,7 +4456,7 @@
      "ship": false
     },
     {
-     "id": "d171",
+     "id": "d176",
      "cat": "Electronics",
      "item": "Camera",
      "note": "",
@@ -4403,7 +4464,7 @@
      "ship": false
     },
     {
-     "id": "d172",
+     "id": "d177",
      "cat": "Documents & money",
      "item": "Passport with Schengen visa",
      "note": "",
@@ -4411,7 +4472,7 @@
      "ship": false
     },
     {
-     "id": "d173",
+     "id": "d178",
      "cat": "Documents & money",
      "item": "Residence permit card",
      "note": "Once issued",
@@ -4419,7 +4480,7 @@
      "ship": false
     },
     {
-     "id": "d174",
+     "id": "d179",
      "cat": "Documents & money",
      "item": "Insurance documents, printed",
      "note": "",
@@ -4427,7 +4488,7 @@
      "ship": false
     },
     {
-     "id": "d175",
+     "id": "d180",
      "cat": "Documents & money",
      "item": "Forex card plus one backup card",
      "note": "",
@@ -4435,7 +4496,7 @@
      "ship": false
     },
     {
-     "id": "d176",
+     "id": "d181",
      "cat": "Documents & money",
      "item": "Cash: EUR, NOK, CHF",
      "note": "",
@@ -4443,7 +4504,7 @@
      "ship": false
     },
     {
-     "id": "d177",
+     "id": "d182",
      "cat": "Health",
      "item": "Personal medication",
      "note": "",
@@ -4451,7 +4512,7 @@
      "ship": false
     },
     {
-     "id": "d178",
+     "id": "d183",
      "cat": "Health",
      "item": "Sunscreen and lip balm",
      "note": "Altitude and Atlantic sun",
@@ -4459,7 +4520,7 @@
      "ship": false
     },
     {
-     "id": "d179",
+     "id": "d184",
      "cat": "Health",
      "item": "Rehydration salts",
      "note": "",
@@ -4467,7 +4528,7 @@
      "ship": false
     },
     {
-     "id": "d180",
+     "id": "d185",
      "cat": "Health",
      "item": "Painkillers and anti-inflammatory",
      "note": "",
@@ -4477,182 +4538,182 @@
    ],
    "pre": [
     {
-     "id": "d181",
+     "id": "d186",
      "cat": "Documents",
      "item": "Passport, at least 6 months validity",
      "note": "",
      "done": false
     },
     {
-     "id": "d182",
+     "id": "d187",
      "cat": "Documents",
      "item": "Schengen visa — confirm multi-entry",
      "note": "",
      "done": false
     },
     {
-     "id": "d183",
+     "id": "d188",
      "cat": "Documents",
      "item": "Norway residence permit paperwork",
      "note": "",
      "done": false
     },
     {
-     "id": "d184",
+     "id": "d189",
      "cat": "Documents",
      "item": "Passport photos x4",
      "note": "",
      "done": false
     },
     {
-     "id": "d185",
+     "id": "d190",
      "cat": "Documents",
      "item": "Flight and accommodation printouts",
      "note": "",
      "done": false
     },
     {
-     "id": "d186",
+     "id": "d191",
      "cat": "Documents",
      "item": "Copies in cloud plus one paper set",
      "note": "",
      "done": false
     },
     {
-     "id": "d187",
+     "id": "d192",
      "cat": "Money",
      "item": "Load the forex card",
      "note": "",
      "done": false
     },
     {
-     "id": "d188",
+     "id": "d193",
      "cat": "Money",
      "item": "Tell the bank the travel dates",
      "note": "",
      "done": false
     },
     {
-     "id": "d189",
+     "id": "d194",
      "cat": "Money",
      "item": "Backup card packed separately",
      "note": "",
      "done": false
     },
     {
-     "id": "d190",
+     "id": "d195",
      "cat": "Money",
      "item": "Small EUR and NOK cash for arrival",
      "note": "",
      "done": false
     },
     {
-     "id": "d191",
+     "id": "d196",
      "cat": "Health",
      "item": "Prescriptions with a doctor letter",
      "note": "",
      "done": false
     },
     {
-     "id": "d192",
+     "id": "d197",
      "cat": "Health",
      "item": "Dental check before leaving",
      "note": "",
      "done": false
     },
     {
-     "id": "d193",
+     "id": "d198",
      "cat": "Health",
      "item": "Diving fitness declaration if the centre asks",
      "note": "",
      "done": false
     },
     {
-     "id": "d194",
+     "id": "d199",
      "cat": "Electronics",
      "item": "Universal adapter",
      "note": "",
      "done": false
     },
     {
-     "id": "d195",
+     "id": "d200",
      "cat": "Electronics",
      "item": "Power bank in cabin bag",
      "note": "",
      "done": false
     },
     {
-     "id": "d196",
+     "id": "d201",
      "cat": "Electronics",
      "item": "Unlocked phone and an eSIM plan",
      "note": "",
      "done": false
     },
     {
-     "id": "d197",
+     "id": "d202",
      "cat": "Gear from home",
      "item": "Boots — broken in, not new",
      "note": "",
      "done": false
     },
     {
-     "id": "d198",
+     "id": "d203",
      "cat": "Gear from home",
      "item": "Tent, bag, mat",
      "note": "",
      "done": false
     },
     {
-     "id": "d199",
+     "id": "d204",
      "cat": "Gear from home",
      "item": "Trekking poles in hold luggage",
      "note": "Not allowed in cabin",
      "done": false
     },
     {
-     "id": "d200",
+     "id": "d205",
      "cat": "Gear from home",
      "item": "Harness and climbing shoes",
      "note": "",
      "done": false
     },
     {
-     "id": "d201",
+     "id": "d206",
      "cat": "Gear from home",
      "item": "Dive computer and mask",
      "note": "",
      "done": false
     },
     {
-     "id": "d202",
+     "id": "d207",
      "cat": "Gear from home",
      "item": "Stove — empty, absolutely no gas",
      "note": "",
      "done": false
     },
     {
-     "id": "d203",
+     "id": "d208",
      "cat": "Home admin",
      "item": "IIMB paperwork and leave sorted",
      "note": "",
      "done": false
     },
     {
-     "id": "d204",
+     "id": "d209",
      "cat": "Home admin",
      "item": "Forward post, set up standing payments",
      "note": "",
      "done": false
     },
     {
-     "id": "d205",
+     "id": "d210",
      "cat": "Home admin",
      "item": "Share the itinerary with family",
      "note": "",
      "done": false
     },
     {
-     "id": "d206",
+     "id": "d211",
      "cat": "Home admin",
      "item": "Back up laptop and photos",
      "note": "",
@@ -4661,103 +4722,115 @@
    ],
    "reminders": [
     {
-     "id": "d207",
+     "id": "d212",
      "when": "2026-08-31",
      "text": "Book the P2 Skjeggedal to P3 Magelitopp shuttle — the upper shuttle stops 15 Sept and seats are limited",
      "done": false
     },
     {
-     "id": "d208",
+     "id": "d213",
      "when": "2026-08-31",
      "text": "Price Bergen to Odda on Entur or Skyss directly — aggregator quotes ranged 3x",
      "done": false
     },
     {
-     "id": "d209",
+     "id": "d214",
      "when": "2026-09-01",
      "text": "Order the DNT key online (NOK 100 refundable deposit) rather than relying on the Bergen office",
      "done": false
     },
     {
-     "id": "d211",
+     "id": "d216",
      "when": "2026-09-05",
-     "text": "Book the Lofoten exit on 30 Sept — the plan gives that transition one day and it may need two",
+     "text": "Book Lofoten back to Bergen for 30 Sept — the 40 kg is in Bergen and the Amsterdam flight leaves from there",
      "done": false
     },
     {
-     "id": "d213",
+     "id": "d217",
+     "when": "2026-09-10",
+     "text": "Buy the second checked bag online when booking BGO-AMS. Two bags at 20 kg beats one at 40 kg — KLM heavy-bag fees are worse than an extra piece",
+     "done": false
+    },
+    {
+     "id": "d218",
+     "when": "2026-09-25",
+     "text": "Do NOT courier the luggage Norway to Netherlands. Norway is outside the EU customs union and the Dutch removal-goods exemption needs proof you are settling there, which you are not. Carry it as checked baggage",
+     "done": false
+    },
+    {
+     "id": "d220",
      "when": "2026-09-08",
      "text": "Hike Trolltunga on 13 or 14 Sept while the upper shuttle still runs — saves 4 km and 400 m each way",
      "done": false
     },
     {
-     "id": "d214",
+     "id": "d221",
      "when": "2026-09-20",
      "text": "Call Skydive Bovec (+386 41 888 707) — ask about the minimum-numbers rule for a solo jump in October",
      "done": false
     },
     {
-     "id": "d215",
+     "id": "d222",
      "when": "2026-09-19",
      "text": "Book the Voss tandem for Sunday 20 Sept; the student discount only runs Mon-Fri, and Monday leaves no weather buffer",
      "done": false
     },
     {
-     "id": "d216",
+     "id": "d223",
      "when": "2026-09-15",
      "text": "Phone the three TMB winter rooms: Croix du Bonhomme, Elisabetta, Bonatti",
      "done": false
     },
     {
-     "id": "d217",
+     "id": "d224",
      "when": "2026-09-20",
      "text": "Camping des Glaciers La Fouly shuts 4 Oct — book a bed instead for the night of 23 Oct",
      "done": false
     },
     {
-     "id": "d218",
+     "id": "d225",
      "when": "2026-10-18",
      "text": "TMB go / no-go: chamonix-meteo plus the Chamonix and Courmayeur webcams",
      "done": false
     },
     {
-     "id": "d219",
+     "id": "d226",
      "when": "2026-10-25",
      "text": "Clocks go back tonight — dark by 17:30 for the last TMB days",
      "done": false
     },
     {
-     "id": "d220",
+     "id": "d227",
      "when": "2026-10-27",
      "text": "Post the alpine kit to Amsterdam FROM CHAMONIX: bag, mat, spikes, gaiters, shell, insulation, messenger. EU to EU — do not post from Geneva",
      "done": false
     },
     {
-     "id": "d221",
+     "id": "d228",
      "when": "2026-09-12",
      "text": "Decide the Lofoten question: keep it and add an Oslo overnight on 30 Sept, or swap to Jotunheimen and save two flights",
      "done": false
     },
     {
-     "id": "d223",
+     "id": "d230",
      "when": "2026-11-11",
      "text": "Last dive at least 24 h before the 13 Nov flight — no diving on the 12th",
      "done": false
     },
     {
-     "id": "d357",
+     "id": "d364",
      "when": "2026-09-01",
      "text": "Check whether the Eurail pass is continuous or flexi — version C burns a lot of travel days",
      "done": false
     },
     {
-     "id": "d358",
+     "id": "d365",
      "when": "2026-10-01",
      "text": "Book the AVE and TGV passholder reservations now. Spanish and French quotas are small and sell out; they are the only real cost in version C",
      "done": false
     },
     {
-     "id": "d359",
+     "id": "d366",
      "when": "2026-10-25",
      "text": "Cabo de Gata: some centres want a medical certificate. Sort it before you arrive",
      "done": false
@@ -4927,5 +5000,328 @@
    "note": "Unverified. Would be free if it holds.",
    "verified": false
   }
+ ],
+ "ddays": [
+  {
+   "permit": "2026-09-20",
+   "d": "2026-09-28",
+   "label": "Permit early — wait for the dark",
+   "nor": [
+    [
+     "Bergen — admin",
+     2
+    ],
+    [
+     "Hardangerfjord",
+     4
+    ],
+    [
+     "Voss",
+     2
+    ],
+    [
+     "Finse to Aurland",
+     4
+    ],
+    [
+     "Lofoten",
+     6
+    ]
+   ],
+   "eur": [
+    [
+     "Amsterdam",
+     3
+    ],
+    [
+     "Bovec, Slovenia",
+     4
+    ],
+    [
+     "Dolomites",
+     4
+    ],
+    [
+     "Arco and Lake Garda",
+     4
+    ],
+    [
+     "Milan",
+     2
+    ],
+    [
+     "Chamonix — buffer",
+     2
+    ]
+   ],
+   "gain": "Six nights in Lofoten from 22 to 27 Sept, and still 19 days in Europe before the TMB — two more than the baseline. An early permit buys days at both ends.",
+   "lose": "Andalsnes. The eight days between the card arriving and D-Day are spent in Norway, not Europe — that is the price of darkness."
+  },
+  {
+   "permit": "2026-09-25",
+   "d": "2026-09-28",
+   "label": "Permit early — same departure",
+   "nor": [
+    [
+     "Bergen — admin",
+     2
+    ],
+    [
+     "Hardangerfjord",
+     4
+    ],
+    [
+     "Voss",
+     2
+    ],
+    [
+     "Finse to Aurland",
+     4
+    ],
+    [
+     "Lofoten",
+     6
+    ]
+   ],
+   "eur": [
+    [
+     "Amsterdam",
+     3
+    ],
+    [
+     "Bovec, Slovenia",
+     4
+    ],
+    [
+     "Dolomites",
+     4
+    ],
+    [
+     "Arco and Lake Garda",
+     4
+    ],
+    [
+     "Milan",
+     2
+    ],
+    [
+     "Chamonix — buffer",
+     2
+    ]
+   ],
+   "gain": "Identical to the 20 Sept case. Anything before about 26 Sept lands on the same D-Day, because Lofoten needs to sit in the last week of September for darkness.",
+   "lose": "Andalsnes."
+  },
+  {
+   "permit": "2026-09-30",
+   "d": "2026-09-30",
+   "label": "As planned",
+   "nor": [
+    [
+     "Bergen — admin",
+     2
+    ],
+    [
+     "Hardangerfjord",
+     4
+    ],
+    [
+     "Voss",
+     2
+    ],
+    [
+     "Finse to Aurland",
+     4
+    ],
+    [
+     "Andalsnes and Romsdal",
+     3
+    ],
+    [
+     "Lofoten",
+     5
+    ]
+   ],
+   "eur": [
+    [
+     "Amsterdam",
+     3
+    ],
+    [
+     "Bovec, Slovenia",
+     3
+    ],
+    [
+     "Dolomites",
+     3
+    ],
+    [
+     "Arco and Lake Garda",
+     4
+    ],
+    [
+     "Milan",
+     2
+    ],
+    [
+     "Chamonix — buffer",
+     2
+    ]
+   ],
+   "gain": "Everything fits: Andalsnes back in, five nights in Lofoten from 25 to 29 Sept.",
+   "lose": "Nothing, but the last Lofoten day is spent flying back to Bergen for the luggage."
+  },
+  {
+   "permit": "2026-10-05",
+   "d": "2026-10-05",
+   "label": "Late",
+   "nor": [
+    [
+     "Bergen — admin",
+     2
+    ],
+    [
+     "Hardangerfjord",
+     4
+    ],
+    [
+     "Voss",
+     2
+    ],
+    [
+     "Finse to Aurland",
+     4
+    ],
+    [
+     "Andalsnes and Romsdal",
+     4
+    ],
+    [
+     "Jotunheimen — Besseggen",
+     3
+    ],
+    [
+     "Lofoten",
+     6
+    ]
+   ],
+   "eur": [
+    [
+     "Amsterdam",
+     2
+    ],
+    [
+     "Bovec, Slovenia",
+     3
+    ],
+    [
+     "Arco and Lake Garda",
+     4
+    ],
+    [
+     "Milan",
+     1
+    ],
+    [
+     "Chamonix — buffer",
+     2
+    ]
+   ],
+   "gain": "Six nights in Lofoten from 29 Sept to 4 Oct — the darkest and statistically best aurora window of any scenario. Besseggen too.",
+   "lose": "The Dolomites entirely. Two rushed days there would be worse than none, with the rifugi shut and both routes needing lifts that may have stopped."
+  },
+  {
+   "permit": "2026-10-10",
+   "d": "2026-10-10",
+   "label": "Very late — the last date that works",
+   "nor": [
+    [
+     "Bergen — admin",
+     2
+    ],
+    [
+     "Hardangerfjord",
+     4
+    ],
+    [
+     "Voss",
+     2
+    ],
+    [
+     "Finse to Aurland",
+     4
+    ],
+    [
+     "Andalsnes and Romsdal",
+     4
+    ],
+    [
+     "Jotunheimen — Besseggen",
+     4
+    ],
+    [
+     "Lysefjord",
+     3
+    ],
+    [
+     "Lofoten",
+     7
+    ]
+   ],
+   "eur": [
+    [
+     "Amsterdam",
+     2
+    ],
+    [
+     "Arco and Lake Garda",
+     2
+    ],
+    [
+     "Milan",
+     1
+    ],
+    [
+     "Chamonix — buffer",
+     2
+    ]
+   ],
+   "gain": "Seven nights in Lofoten from 3 to 9 Oct, plus Jotunheimen and the Lysefjord. A proper month in Norway.",
+   "lose": "Slovenia and the Dolomites both gone. Past this date the TMB start slips and you are back in the snow argument."
+  }
+ ],
+ "tail": [
+  [
+   "Tour du Mont Blanc",
+   9
+  ],
+  [
+   "Chamonix to Barcelona",
+   2
+  ],
+  [
+   "Siurana and Margalef",
+   4
+  ],
+  [
+   "El Chorro",
+   4
+  ],
+  [
+   "Lanzarote",
+   2
+  ],
+  [
+   "El Hierro",
+   4
+  ],
+  [
+   "Los Cristianos, Tenerife",
+   1
+  ],
+  [
+   "Tenerife to Amsterdam",
+   1
+  ]
  ]
 }

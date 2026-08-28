@@ -53,6 +53,19 @@ button,input,select,textarea{font:inherit;color:inherit}
 #main{overflow-y:auto;overscroll-behavior:contain;position:relative}
 
 /* ── the latitude spine ────────────────── */
+#filt{position:sticky;top:0;z-index:4;background:var(--bg2);border-bottom:1px solid var(--line2);padding:12px 14px 10px}
+#filt .fld{padding:7px 9px;font-size:13px}
+#chips{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
+#chips button{background:none;border:1px solid var(--line);color:var(--dim);padding:4px 9px;cursor:pointer;
+  font-family:var(--mono);font-size:10px;letter-spacing:.04em;border-radius:2px;display:flex;align-items:center;gap:5px}
+#chips button:hover{color:var(--fg);border-color:var(--dim)}
+#chips button[aria-pressed="true"]{color:var(--bg);font-weight:700}
+#chips i{width:7px;height:7px;border-radius:50%;display:inline-block}
+#fcount{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:8px;min-height:13px}
+.stop.dim{opacity:.22}
+.stop.dim:hover{opacity:.55}
+.hit{font-family:var(--mono);font-size:10px;color:var(--south);margin-top:3px;display:block;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #spine{position:relative;padding:16px 14px 40px}
 #thread{position:absolute;inset:0;pointer-events:none;overflow:visible}
 #thread path{fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
@@ -234,6 +247,11 @@ input[type=checkbox]{accent-color:var(--ok);width:16px;height:16px;cursor:pointe
 
   <div id="body">
     <nav id="rail" aria-label="Itinerary">
+      <div id="filt">
+        <input id="q" class="fld m" placeholder="Find a trek, dive, crag, errand…" autocomplete="off">
+        <div id="chips"></div>
+        <div id="fcount"></div>
+      </div>
       <div id="spine"><svg id="thread" aria-hidden="true"><path id="threadPath"/></svg></div>
     </nav>
 
@@ -244,6 +262,7 @@ input[type=checkbox]{accent-color:var(--ok);width:16px;height:16px;cursor:pointe
         <button data-view="map" aria-pressed="false">Map</button>
         <button data-view="todo" aria-pressed="false">To do</button>
         <button data-view="det" aria-pressed="false">Detours</button>
+        <button data-view="dday" aria-pressed="false">D-Day</button>
         <span class="sep"></span>
         <button data-view="pack" aria-pressed="false">Packing</button>
         <button data-view="set" aria-pressed="false">Settings</button>
@@ -310,6 +329,7 @@ input[type=checkbox]{accent-color:var(--ok);width:16px;height:16px;cursor:pointe
         <div id="dets"></div>
       </section>
 
+      <section class="pane" id="v-dday"></section>
       <section class="pane" id="v-pack"></section>
       <section class="pane" id="v-set"></section>
     </div>
@@ -341,11 +361,11 @@ SEG('Andalsnes and Romsdal','adv',4,'Raumabanen via Dombas','Wild camp or campsi
 SEG('Lofoten','trek',5,'Fly Molde or Bodo, then ferry','Wild camp','Aurora season is open by late Sept. Weather is the variable — have a rest-day plan.',
  [['Reinebringen','Trek — stone steps, short and steep'],['Hermannsdalstinden','Trek — highest in west Lofoten'],['Kvalvika beach camp','Trek and camp'],['Aurora watch','Night']]),
 
-SEG('Bergen to Bovec','transit',1,'Fly BGO to Ljubljana, bus onward','In transit','Travel day. The Eurail pass starts earning from here.',
- [['Activate Eurail Global Pass','Admin']]),
+SEG('Amsterdam','transit',3,'Fly Bergen to Schiphol direct with KLM, 1h50','Friend place — free','Drop the 40 kg. You cannot take it to Bovec, so this stop is a logistics requirement, not a luxury. Unpack, repack a trek load, resupply.',
+ [['Fly BGO to AMS, 2 bags at 20 kg','Transit — direct beats one-stop with this much luggage'],['Leave everything you will not need again until 13 Nov','Logistics'],['Repack to a trek load only','Logistics'],['Activate the Eurail pass','Admin'],['Fly Schiphol to Ljubljana','Transit']]),
 SEG('Bovec, Slovenia','adv',3,'Bus from Ljubljana','Campsite','Everything here winds down mid-October, which is why it goes first.',
  [['Soca rafting or kayak','Adventure'],['Susec canyoning','Adventure'],['Kanin paragliding','Adventure'],['Krn or Triglav approach','Trek']]),
-SEG('Dolomites','trek',5,'Bus to Tarvisio, train to Bolzano','Campsite or valley room','Rifugi mostly shut. Day hikes, and via ferrata on the clear days.',
+SEG('Dolomites','trek',3,'Bus to Tarvisio, train to Bolzano','Campsite or valley room','Three days, not five — the two went to the Amsterdam luggage stop. Rifugi are shut anyway and both headline routes need seasonal lifts running.',
  [['Tre Cime di Lavaredo loop','Trek — 10 km'],['Seceda ridgeline','Trek'],['Brenta or Sella via ferrata','Adventure — weather dependent'],['Lago di Braies','Short walk']]),
 SEG('Arco and Lake Garda','adv',4,'Train to Rovereto, bus to Arco','Camping Arco','Peak-season limestone. Warm rock, cheap, and the best pure-fun stop of the trip.',
  [['Sport climbing, Massone and Nago','Adventure'],['Via ferrata, Monte Baldo','Adventure'],['Brenta canyoning','Adventure'],['Paraglide Malcesine','Adventure']]),
@@ -391,9 +411,10 @@ BK('Tour du Mont Blanc','Val Veny and Val Ferret campsites — phone for October
 BK('Tour du Mont Blanc','Chamonix to Courmayeur tunnel bus timetable, for the bail','2026-10-10'),
 BK('Tour du Mont Blanc','Alpine rescue insurance covering Italy and Switzerland','2026-09-30'),
 BK('Tour du Mont Blanc','GPX on watch, plus paper map and compass','2026-10-15'),
-BK('Flights','Bergen to Ljubljana, 1 Oct','2026-09-05'),
+BK('Flights','Bergen to Amsterdam, 1 Oct — KLM direct, 2 checked bags at 20 kg each','2026-09-05'),
+BK('Flights','Amsterdam to Ljubljana, 4 Oct','2026-09-20'),
 BK('Flights','Bergen to Bodo or Evenes for Lofoten, ~26 Sept','2026-09-05'),
-BK('Flights','Lofoten south to Oslo, 30 Sept — this leg was missing from the plan','2026-09-05'),
+BK('Flights','Lofoten back to Bergen, 30 Sept — the 40 kg is in Bergen, so Norway has to end there','2026-09-05'),
 BK('Flights','Malaga to Arrecife, 6 Nov','2026-09-10'),
 BK('Flights','Arrecife to Tenerife SOUTH, 8 Nov — south, not north, to reach the ferry','2026-09-10'),
 BK('Flights','Tenerife South to Amsterdam Schiphol, 13 Nov — direct, Transavia or easyJet','2026-09-01'),
@@ -408,7 +429,7 @@ BK('Rail & ferry','Ferry El Hierro to Los Cristianos, 12 Nov — day before the 
 BK('Stays','Voss, 20 to 21 Sept','2026-09-10'),
 BK('Stays','Andalsnes, 22 to 25 Sept','2026-09-12'),
 BK('Stays','Lofoten base, 26 to 30 Sept','2026-09-12'),
-BK('Stays','Bovec campsite, 2 to 4 Oct','2026-09-25'),
+BK('Stays','Bovec campsite, 5 to 7 Oct','2026-09-25'),
 BK('Stays','Milan hotel, 14 to 15 Oct','2026-10-01'),
 BK('Stays','Chamonix, 16 to 17 Oct','2026-10-01'),
 BK('Stays','Camping Siurana, 29 Oct to 1 Nov','2026-10-15'),
@@ -508,7 +529,9 @@ reminders:[
 {id:nid(),when:'2026-08-31',text:'Price Bergen to Odda on Entur or Skyss directly — aggregator quotes ranged 3x',done:false},
 {id:nid(),when:'2026-09-01',text:'Order the DNT key online (NOK 100 refundable deposit) rather than relying on the Bergen office',done:false},
 {id:nid(),when:'2026-09-15',text:'Confirm Fred Olsen sailing days for 8 and 12 Nov — crossings drop to about 5 a week from October',done:false},
-{id:nid(),when:'2026-09-05',text:'Book the Lofoten exit on 30 Sept — the plan gives that transition one day and it may need two',done:false},
+{id:nid(),when:'2026-09-05',text:'Book Lofoten back to Bergen for 30 Sept — the 40 kg is in Bergen and the Amsterdam flight leaves from there',done:false},
+{id:nid(),when:'2026-09-10',text:'Buy the second checked bag online when booking BGO-AMS. Two bags at 20 kg beats one at 40 kg — KLM heavy-bag fees are worse than an extra piece',done:false},
+{id:nid(),when:'2026-09-25',text:'Do NOT courier the luggage Norway to Netherlands. Norway is outside the EU customs union and the Dutch removal-goods exemption needs proof you are settling there, which you are not. Carry it as checked baggage',done:false},
 {id:nid(),when:'2026-09-05',text:'Email Folgefonni Glacier Team for the Jondal ferry-dock pickup at 11:10 — the packaged Bergen trip does not run in September',done:false},
 {id:nid(),when:'2026-09-08',text:'Hike Trolltunga on 13 or 14 Sept while the upper shuttle still runs — saves 4 km and 400 m each way',done:false},
 {id:nid(),when:'2026-09-20',text:'Call Skydive Bovec (+386 41 888 707) — ask about the minimum-numbers rule for a solo jump in October',done:false},
@@ -654,6 +677,40 @@ const DETOUR_SEED=[
  blurb:'Reported location for Cliffhanger and earlier Bond work, in the mountains you are already walking.',
  note:'Unverified. Would be free if it holds.',verified:false}
 ];
+
+
+/* ── D-Day scenarios ───────────────────── */
+/* Norway is elastic; the Europe tail is anchored to weather. TMB must start 18–20 Oct,
+   the Canaries cannot move earlier than November, so the back half never changes. */
+const DDAYS=[
+{permit:'2026-09-20',d:'2026-09-28',label:'Permit early — wait for the dark',
+ nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Lofoten',6]],
+ eur:[['Amsterdam',3],['Bovec, Slovenia',4],['Dolomites',4],['Arco and Lake Garda',4],['Milan',2],['Chamonix — buffer',2]],
+ gain:'Six nights in Lofoten from 22 to 27 Sept, and still 19 days in Europe before the TMB — two more than the baseline. An early permit buys days at both ends.',
+ lose:'Andalsnes. The eight days between the card arriving and D-Day are spent in Norway, not Europe — that is the price of darkness.'},
+{permit:'2026-09-25',d:'2026-09-28',label:'Permit early — same departure',
+ nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Lofoten',6]],
+ eur:[['Amsterdam',3],['Bovec, Slovenia',4],['Dolomites',4],['Arco and Lake Garda',4],['Milan',2],['Chamonix — buffer',2]],
+ gain:'Identical to the 20 Sept case. Anything before about 26 Sept lands on the same D-Day, because Lofoten needs to sit in the last week of September for darkness.',
+ lose:'Andalsnes.'},
+{permit:'2026-09-30',d:'2026-09-30',label:'As planned',
+ nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',3],['Lofoten',5]],
+ eur:[['Amsterdam',3],['Bovec, Slovenia',3],['Dolomites',3],['Arco and Lake Garda',4],['Milan',2],['Chamonix — buffer',2]],
+ gain:'Everything fits: Andalsnes back in, five nights in Lofoten from 25 to 29 Sept.',
+ lose:'Nothing, but the last Lofoten day is spent flying back to Bergen for the luggage.'},
+{permit:'2026-10-05',d:'2026-10-05',label:'Late',
+ nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',4],['Jotunheimen — Besseggen',3],['Lofoten',6]],
+ eur:[['Amsterdam',2],['Bovec, Slovenia',3],['Arco and Lake Garda',4],['Milan',1],['Chamonix — buffer',2]],
+ gain:'Six nights in Lofoten from 29 Sept to 4 Oct — the darkest and statistically best aurora window of any scenario. Besseggen too.',
+ lose:'The Dolomites entirely. Two rushed days there would be worse than none, with the rifugi shut and both routes needing lifts that may have stopped.'},
+{permit:'2026-10-10',d:'2026-10-10',label:'Very late — the last date that works',
+ nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',4],['Jotunheimen — Besseggen',4],['Lysefjord',3],['Lofoten',7]],
+ eur:[['Amsterdam',2],['Arco and Lake Garda',2],['Milan',1],['Chamonix — buffer',2]],
+ gain:'Seven nights in Lofoten from 3 to 9 Oct, plus Jotunheimen and the Lysefjord. A proper month in Norway.',
+ lose:'Slovenia and the Dolomites both gone. Past this date the TMB start slips and you are back in the snow argument.'}
+];
+const TAIL=[['Tour du Mont Blanc',9],['Chamonix to Barcelona',2],['Siurana and Margalef',4],
+  ['El Chorro',4],['Lanzarote',2],['El Hierro',4],['Los Cristianos, Tenerife',1],['Tenerife to Amsterdam',1]];
 
 const VERS={
 A:{key:'rs-A',label:'linear',def:DEF_A,sub:'One-way arc, Bergen &rarr; Alps &rarr; Atlantic &rarr; Amsterdam'},
@@ -860,7 +917,7 @@ function parseGPX(text){
 }
 
 /* ── keys, state ───────────────────────── */
-const BUILD='2026-08-27-c';
+const BUILD='2026-08-27-g';
 const VKEY='rs-version', BKEY='rs-build', SHKEY='rs-shared', GHKEY='rs-gh', PLANKEY='rs-planurl';
 const store=(typeof window!=='undefined'&&window.storage&&window.storage.get)?window.storage:{
   get:async k=>{const v=localStorage.getItem(k);if(v===null)throw new Error('not found');return{key:k,value:v};},
@@ -870,12 +927,14 @@ const HOSTED=!(typeof window!=='undefined'&&window.storage&&window.storage.get);
 
 let CURV='A', S=null, SEL=0, VIEW='stop', LIVEBUILD=BUILD, STALE=null;
 let MAP=null,LAYER=null,MINI=null,LEGF='all',TRK=true,TODOV='d';
+let FILT='',Q='';
 
 const $=s=>document.querySelector(s);
 const $$=s=>[...document.querySelectorAll(s)];
 const uid=()=>Math.random().toString(36).slice(2,9);
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const TAGS={trek:'Trek',adv:'Adventure',dive:'Dive',city:'City',transit:'Transit',rest:'Rest'};
+const TAGCOL={trek:'#6FD39B',adv:'#E8A33D',dive:'#8FD4E8',city:'#C3A6E0',transit:'#7E9AA1',rest:'#D9D2BC'};
 const STLBL={todo:'Not started',ask:'Enquired',done:'Confirmed'};
 const STATUS=['todo','ask','done'];
 const BKG=['Tour du Mont Blanc','Flights','Rail & ferry','Stays','Activities','Admin'];
@@ -992,6 +1051,33 @@ function showUpd(old){
 
 /* ── the spine ─────────────────────────── */
 const PHASES=[{at:0,label:'Norway · September'},{at:6,label:'Europe · October to November'}];
+function matches(s){
+  if(FILT&&s.tag!==FILT)return null;
+  if(!Q)return '';
+  const q=Q.toLowerCase();
+  if((s.place||'').toLowerCase().includes(q))return '';
+  const it=(s.items||[]).find(i=>(i.text||'').toLowerCase().includes(q)||(i.kind||'').toLowerCase().includes(q));
+  if(it)return it.text;
+  if((s.notes||'').toLowerCase().includes(q))return 'in notes';
+  if((s.transport||'').toLowerCase().includes(q))return s.transport;
+  if((s.stay||'').toLowerCase().includes(q))return s.stay;
+  return null;
+}
+function renderChips(){
+  const host=$('#chips'); if(host.dataset.built)return; host.dataset.built='1';
+  const mk=(k,label,col)=>{const b=document.createElement('button');
+    b.dataset.tag=k;b.setAttribute('aria-pressed',String(FILT===k));
+    b.innerHTML=(col?'<i style="background:'+col+'"></i>':'')+label;
+    b.onclick=()=>{FILT=(FILT===k)?'':k;
+      $$('#chips button').forEach(x=>{const on=x.dataset.tag===FILT&&FILT!=='';
+        x.setAttribute('aria-pressed',String(on));
+        x.style.background=on?(TAGCOL[x.dataset.tag]||'var(--fg)'):'none';
+        x.style.borderColor=on?(TAGCOL[x.dataset.tag]||'var(--fg)'):'';});
+      renderSpine();};
+    host.appendChild(b);};
+  mk('','All','');
+  Object.entries(TAGS).forEach(([k,v])=>mk(k,v,TAGCOL[k]));
+}
 function renderSpine(){
   const host=$('#spine'), d=dates();
   const svg=$('#thread');
@@ -999,7 +1085,7 @@ function renderSpine(){
   const lats=S.segments.map(s=>{const c=coordsFor(s);return c?c[0]:null;}).filter(x=>x!==null);
   const lo=Math.min(...lats), hi=Math.max(...lats), span=(hi-lo)||1;
   const MAXOFF=54;
-  const nodes=[];
+  const nodes=[];let shown=0;
   S.segments.forEach((s,i)=>{
     const ph=PHASES.find(p=>p.at===i);
     if(ph){const h=document.createElement('div');h.className='phase';h.textContent=ph.label;host.appendChild(h);}
@@ -1007,20 +1093,23 @@ function renderSpine(){
     const off=lat===null?MAXOFF/2:((lat-lo)/span)*MAXOFF;
     const col=latColour(lat);
     const over=between(S.tripEnd,d[i].to)>0;
+    const m=matches(s); if(m!==null)shown++;
     const b=document.createElement('button');
-    b.className='stop'+(over?' over':'');
+    b.className='stop'+(over?' over':'')+(m===null?' dim':'');
     b.setAttribute('aria-current',String(i===SEL));
     b.style.paddingLeft=(off+4)+'px';
     b.innerHTML='<span class="srow"><span class="node" style="background:'+col+';color:'+col+'"></span>'+
       '<span class="sbody"><span class="sname">'+esc(s.place||'Untitled')+'</span>'+
       '<span class="smeta">'+fmtS(d[i].from)+(d[i].n>1?' – '+fmtS(d[i].to):'')+
       (lat!==null?' · '+lat.toFixed(0)+'°N':'')+'</span></span>'+
+      (m?'<span class="hit">'+esc(m)+'</span>':'')+'</span>'+
       '<span class="sdays">'+d[i].n+'d</span></span>';
     b.onclick=()=>{SEL=i;setView('stop');renderSpine();renderStop();
       if(window.innerWidth<=860)document.body.classList.add('detail');};
     host.appendChild(b);
     nodes.push({el:b,off:off});
   });
+  $('#fcount').textContent=(FILT||Q)?(shown+' of '+S.segments.length+' stops match'):'';
   requestAnimationFrame(()=>{
     const pts=nodes.map(n=>{
       const dot=n.el.querySelector('.node');
@@ -1334,6 +1423,62 @@ function renderDets(){
     host.appendChild(w);});
 }
 
+/* ── D-Day scenarios ───────────────────── */
+function renderDDay(){
+  const rows=DDAYS.map(sc=>{
+    const nD=sc.nor.reduce((a,x)=>a+x[1],0), eD=sc.eur.reduce((a,x)=>a+x[1],0),
+          tD=TAIL.reduce((a,x)=>a+x[1],0);
+    const total=nD+eD+tD;
+    let c=sc.d; const tmbStart=(()=>{let x=addDays(sc.d,1);sc.eur.forEach(s=>x=addDays(x,s[1]));return x;})();
+    const norStart='2026-09-10';
+    const chain=a=>{let x=norStart,o=[];a.forEach(s=>{o.push([s[0],x,addDays(x,s[1]-1),s[1]]);x=addDays(x,s[1]);});return o;};
+    const nor=chain(sc.nor);
+    let x=addDays(sc.d,1),eur=[];sc.eur.forEach(s=>{eur.push([s[0],x,addDays(x,s[1]-1),s[1]]);x=addDays(x,s[1]);});
+    let tail=[];TAIL.forEach(s=>{tail.push([s[0],x,addDays(x,s[1]-1),s[1]]);x=addDays(x,s[1]);});
+    const end=addDays(x,-1);
+    return {sc,nor,eur,tail,nD,eD,tD,total,tmbStart,end};
+  });
+  const line=a=>a.map(r=>'<tr><td class="d">'+fmtS(r[1])+(r[3]>1?' – '+fmtS(r[2]):'')+
+    '</td><td>'+esc(r[0])+'</td><td class="d" style="text-align:right">'+r[3]+'d</td></tr>').join('');
+  $('#v-dday').innerHTML=
+    '<div class="kicker">Contingency</div><h2 class="big">D-Day</h2>'+
+    '<p class="lede">Norway runs until the permit card is in your hand. The back half of the trip is anchored '+
+    'to weather and cannot move, so every day the permit slips comes out of the front of Europe — never out of '+
+    'the TMB or the Canaries.</p>'+
+    '<p class="lede"><b>D-Day is not the permit date.</b> Norway\'s aurora season starts in late September and the '+
+    'auroral oval sits over 65–70°N, so Lofoten at 68°N is the only place on this trip that reliably sees it. '+
+    'That means an early permit does not mean an early departure — you stay for the darkness. Nothing before about '+
+    '26 September changes D-Day at all. Lofoten is last in every scenario so it always falls as late and as dark as possible.</p>'+
+    rows.map(r=>
+      '<div class="sec"><h3>Permit '+fmtS(r.sc.permit)+' &rarr; leave '+fmtS(r.sc.d)+' · '+esc(r.sc.label)+' · TMB '+fmtS(r.tmbStart)+
+        (r.end!=='2026-11-13'?' · <span style="color:var(--alert)">ends '+fmtS(r.end)+'</span>':'')+'</h3>'+
+      '<div class="two"><div>'+
+        '<table class="kv" style="font-size:13px"><tr><td colspan="3" class="soft" style="border:0;padding-bottom:4px">'+
+        'NORWAY · '+r.nD+' days</td></tr>'+line(r.nor)+'</table></div><div>'+
+        '<table class="kv" style="font-size:13px"><tr><td colspan="3" class="soft" style="border:0;padding-bottom:4px">'+
+        'EUROPE, PRE-TMB · '+r.eD+' days</td></tr>'+line(r.eur)+'</table></div></div>'+
+      '<p class="hint" style="margin-top:12px"><b style="color:var(--ok)">Gain</b> — '+esc(r.sc.gain)+'</p>'+
+      '<p class="hint"><b style="color:var(--alert)">Lose</b> — '+esc(r.sc.lose)+'</p>'+
+      '<div class="tools" style="margin-top:12px"><button class="btn" data-apply="'+r.sc.d+'">Apply to version '+CURV+'</button></div>'+
+      '</div>').join('')+
+    '<div class="sec"><h3>Unchanged in every scenario</h3><table class="kv" style="font-size:13px">'+
+      TAIL.map(t=>'<tr><td>'+esc(t[0])+'</td><td class="d">'+t[1]+'d</td></tr>').join('')+'</table>'+
+      '<p class="hint" style="margin-top:10px">18 days from the first TMB step to the flight out. This is the part '+
+      'the weather decides, so it never absorbs a delay.</p></div>';
+
+  $$('#v-dday [data-apply]').forEach(b=>b.onclick=()=>{
+    const r=rows.find(x=>x.sc.d===b.dataset.apply);
+    if(!confirm('Rebuild version '+CURV+' for a '+fmtS(r.sc.d)+' D-Day? Your notes and ticks are kept where stop names match.'))return;
+    const old=JSON.parse(JSON.stringify(S));
+    const find=n=>[...VERS.A.def.segments,...VERS.B.def.segments,...VERS.C.def.segments].find(s=>s.place===n);
+    const mk=([n,f,t,d])=>{const src=find(n);
+      return src?Object.assign(JSON.parse(JSON.stringify(src)),{id:uid(),nights:d})
+                :{id:uid(),place:n,tag:'trek',nights:d,transport:'',stay:'',notes:'',items:[]};};
+    S.segments=[...r.nor,...r.eur,...r.tail].map(mk);
+    S=mergeBuild(old,S);norm();SEL=0;killMaps();render();save();
+  });
+}
+
 /* ── packing (shared) ──────────────────── */
 function renderPack(){
   const cats=a=>[...new Set(a.map(k=>k.cat))];
@@ -1533,12 +1678,15 @@ function setView(v){
   if(v==='map')drawMap();
   if(v==='todo')renderTodo();
   if(v==='det')renderDets();
+  if(v==='dday')renderDDay();
   if(v==='pack')renderPack();
   if(v==='set')renderSet();
   if(v==='stop')renderStop();
   $('#main').scrollTop=0;
 }
-function render(){renderTop();renderSpine();setView(VIEW);}
+function render(){renderTop();renderChips();renderSpine();setView(VIEW);}
+$('#q').oninput=e=>{Q=e.target.value.trim();renderSpine();};
+$('#q').onkeydown=e=>{if(e.key==='Escape'){Q='';e.target.value='';renderSpine();}};
 
 $$('[data-ver]').forEach(b=>b.onclick=async()=>{
   if(b.dataset.ver===CURV)return;
