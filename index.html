@@ -195,15 +195,56 @@ input[type=checkbox]{accent-color:var(--ok);width:16px;height:16px;cursor:pointe
 
 /* mobile */
 #back{display:none}
+#mtop,#mnav,#sheet{display:none}
+#mtop{position:sticky;top:0;z-index:6;background:var(--bg2);border-bottom:1px solid var(--line2);
+  padding:10px 14px;align-items:center;gap:12px}
+#mtop button{background:none;border:0;color:var(--fg);font-size:20px;line-height:1;padding:4px 8px;cursor:pointer}
+#mtitle{font-family:var(--disp);font-weight:600;font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#mnav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--bg2);
+  border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom));
+  justify-content:space-around}
+#mnav button{background:none;border:0;color:var(--dim);font-family:var(--mono);font-size:10.5px;
+  padding:9px 6px;cursor:pointer;flex:1;letter-spacing:.03em}
+#mnav button[aria-pressed="true"]{color:var(--fg)}
+#mnav button b{font-weight:400}
+#sheet{position:fixed;inset:0;z-index:30;background:rgba(6,12,15,.7);align-items:flex-end}
+.sheetin{background:var(--bg2);border-top:1px solid var(--line);width:100%;
+  padding:10px 12px calc(14px + env(safe-area-inset-bottom))}
+.sheetin button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--fg);
+  padding:15px 12px;font-size:15px;cursor:pointer;border-bottom:1px solid var(--line2)}
+.sheetin button.cancel{color:var(--dim);border-bottom:0;text-align:center}
 @media(max-width:860px){
   :root{--rail:100%}
   #body{grid-template-columns:1fr}
-  #rail{border-right:0}
+  #rail{border-right:0;padding-bottom:78px}
   #main{display:none}
   body.detail #rail{display:none}
   body.detail #main{display:block}
-  #back{display:inline-flex;align-items:center;gap:6px}
-  #mapc{height:calc(100vh - 210px)}
+  #mnav{display:flex}
+  #mtop{display:flex}
+  #sheet.on{display:flex}
+  .views{display:none}
+  .pane{padding:18px 16px 96px}
+  #top{padding:9px 14px;gap:10px;row-gap:8px}
+  .brand{font-size:15px;flex:1 1 100%}
+  .vsw button{padding:8px 12px;font-size:11.5px}
+  .budget{margin-left:auto;font-size:10.5px}
+  .bbar{width:92px}
+  #filt{padding:10px 12px 9px}
+  #filt .fld,.fld,.row input[type=text],.row input[type=date],textarea.fld,select.fld{font-size:16px}
+  .stop{padding:13px 10px 13px 0}
+  .sname{font-size:15.5px;white-space:normal}
+  #mapc{height:calc(100vh - 260px);min-height:300px}
+  #minimap{height:220px}
+  h2.big{font-size:26px}
+  .sec{margin-top:26px}
+  .kv td:last-child{font-size:11.5px}
+  .r-todo{grid-template-columns:16px 1fr;row-gap:4px}
+  .r-todo>*:nth-child(2){grid-column:2}
+  .r-todo>*:nth-child(3){grid-column:1/-1}
+  .r-todo>*:nth-child(4){grid-column:1/-1;justify-self:end}
+  .tools{gap:6px}
+  .btn{padding:9px 12px}
 }
 @media(prefers-reduced-motion:no-preference){
   #thread path{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.1s ease forwards}
@@ -256,6 +297,7 @@ input[type=checkbox]{accent-color:var(--ok);width:16px;height:16px;cursor:pointe
     </nav>
 
     <div id="main">
+      <div id="mtop"><button id="mback">&larr;</button><span id="mtitle"></span></div>
       <div class="views" role="group" aria-label="View">
         <button class="btn" id="back" style="border:0;background:none">&larr; Trip</button>
         <button data-view="stop" aria-pressed="true">Stop</button>
@@ -334,6 +376,20 @@ input[type=checkbox]{accent-color:var(--ok);width:16px;height:16px;cursor:pointe
       <section class="pane" id="v-set"></section>
     </div>
   </div>
+  <nav id="mnav" aria-label="Sections">
+    <button data-m="trip"><b>Trip</b></button>
+    <button data-m="map">Map</button>
+    <button data-m="todo">To do</button>
+    <button data-m="pack">Pack</button>
+    <button data-m="more">More</button>
+  </nav>
+  <div id="sheet"><div class="sheetin">
+    <button data-s="stop">Current stop</button>
+    <button data-s="det">Detours</button>
+    <button data-s="dday">D-Day scenarios</button>
+    <button data-s="set">Settings</button>
+    <button data-s="close" class="cancel">Close</button>
+  </div></div>
 </div>
 <div id="printsheet"></div>
 
@@ -917,7 +973,7 @@ function parseGPX(text){
 }
 
 /* ── keys, state ───────────────────────── */
-const BUILD='2026-08-27-g';
+const BUILD='2026-08-27-h';
 const VKEY='rs-version', BKEY='rs-build', SHKEY='rs-shared', GHKEY='rs-gh', PLANKEY='rs-planurl';
 const store=(typeof window!=='undefined'&&window.storage&&window.storage.get)?window.storage:{
   get:async k=>{const v=localStorage.getItem(k);if(v===null)throw new Error('not found');return{key:k,value:v};},
@@ -1683,6 +1739,7 @@ function setView(v){
   if(v==='set')renderSet();
   if(v==='stop')renderStop();
   $('#main').scrollTop=0;
+  if(typeof syncNav==='function')syncNav();
 }
 function render(){renderTop();renderChips();renderSpine();setView(VIEW);}
 $('#q').oninput=e=>{Q=e.target.value.trim();renderSpine();};
@@ -1699,6 +1756,28 @@ $$('[data-ver]').forEach(b=>b.onclick=async()=>{
 });
 $$('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $('#back').onclick=()=>document.body.classList.remove('detail');
+$('#mback').onclick=()=>{document.body.classList.remove('detail');syncNav();};
+function syncNav(){
+  const onTrip=!document.body.classList.contains('detail');
+  const m={map:'map',todo:'todo',pack:'pack'};
+  $$('#mnav [data-m]').forEach(b=>b.setAttribute('aria-pressed',
+    String(onTrip ? b.dataset.m==='trip' : m[b.dataset.m]===VIEW)));
+  const t={stop:(S&&S.segments[SEL])?S.segments[SEL].place:'Stop',map:'Map',todo:'To do',
+    det:'Detours',dday:'D-Day',pack:'Packing',set:'Settings'};
+  $('#mtitle').textContent=t[VIEW]||'';
+}
+$$('#mnav [data-m]').forEach(b=>b.onclick=()=>{
+  const m=b.dataset.m;
+  if(m==='more'){$('#sheet').classList.add('on');return;}
+  if(m==='trip'){document.body.classList.remove('detail');syncNav();return;}
+  document.body.classList.add('detail');setView(m);
+});
+$$('#sheet [data-s]').forEach(b=>b.onclick=()=>{
+  $('#sheet').classList.remove('on');
+  if(b.dataset.s==='close')return;
+  document.body.classList.add('detail');setView(b.dataset.s);
+});
+$('#sheet').onclick=e=>{if(e.target.id==='sheet')$('#sheet').classList.remove('on');};
 $$('[data-leg]').forEach(b=>b.onclick=()=>{LEGF=b.dataset.leg;
   $$('[data-leg]').forEach(x=>x.classList.toggle('key',x===b));drawMap();});
 $('#trkT').onclick=()=>{TRK=!TRK;$('#trkT').textContent='Tracks '+(TRK?'on':'off');
@@ -1731,7 +1810,9 @@ $('#addDet').onclick=()=>{
   S.customDetours.push({id:uid(),name,region,anchors:[near],days:isFinite(days)?days:1,
     lat:0,lon:0,blurb:'',note:'Added by you — set coordinates on the stop once inserted.',verified:true});
   renderDets();save();};
-window.addEventListener('resize',()=>{renderSpine();if(MAP)MAP.invalidateSize();});
+window.addEventListener('resize',()=>{
+  if(window.innerWidth>860){document.body.classList.remove('detail');$('#sheet').classList.remove('on');}
+  renderSpine();if(MAP)MAP.invalidateSize();});
 
 if(HOSTED&&'serviceWorker'in navigator){
   window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
