@@ -402,8 +402,12 @@ const KT=(cat,item,note,ship)=>({id:nid(),cat,item,note:note||'',done:false,ship
 const PR=(cat,item,note)=>({id:nid(),cat,item,note:note||'',done:false});
 
 const DEF_A={
-tripStart:'2026-09-10',tripEnd:'2026-11-13',
+tripStart:'2026-09-03',tripEnd:'2026-11-13',
 segments:[
+SEG('Oslo — arrival','transit',1,'Land at Gardermoen, night in Oslo','Airport or city hotel','Train to Bergen leaves 06:25 on the 4th. Sleep near the station or the airport express, not somewhere you have to cross the city from at five in the morning.',
+ [['Bergensbanen 06:25, Oslo S to Bergen','Transit — about 7 h, covered by Eurail, reserve a seat'],['Buy a Skyss ticket or app before you land','Admin']]),
+SEG('Bergen — city mountains','trek',6,'Bergensbanen arrives early afternoon, then bus to the BnB','BnB','The permit window. Keep it unbooked — you are trying for a walk-in verification before the 9th, so everything here has to be droppable at a few hours notice. Bergen is the city of seven mountains and every one of them is a half-day from your door.',
+ [['Floyen, 400 m','Easiest — funicular up or walk, walk down'],['Stoltzekleiven — about 908 steps to Sandviksfjellet','Walk UP only; the stair is narrow and steep, locals descend another way'],['Stoltzen to Rundemanen to Floyen and down','2-3 h round trip — your friend runs this'],['Ulriken, 643 m — the Oppstemten sherpa stairs','Highest of the seven; cable car down if the legs are gone'],['Vidden: Ulriken to Floyen ridge','The classic Bergen traverse'],['Lovstakken, 477 m','10 min by bus from the centre; 3 m summit cairn built by locals in 1945'],['Lyderhorn, 396 m','Westernmost, 5 km out, sea views — a historic navigation mark'],['Damsgardsfjellet, 317 m','Trails from Melkeplassen or over from Lyderhorn'],['7-fjellsturen — all seven in a day','35 km, 2,400 m. The big one']]),
 SEG('Bergen','city',2,'Already in place','Own place','Police verification 9 Sept. Do not book anything non-refundable until the permit card is physically in hand.',
  [['Join DNT, buy the universal hut key','Admin — unlocks self-service huts'],['Gas canisters and any missing layers','Gear'],['Confirm permit timeline','Admin']]),
 SEG('Hardangerfjord','trek',4,'Bergen to Voss to Odda','Wild camp (allemannsretten)','Trolltunga is 28 km return. The 3-day traverse is the better version if the weather holds.',
@@ -603,9 +607,9 @@ reminders:[
 ]};
 
 const DEF_B={
-tripStart:'2026-09-10',tripEnd:'2026-11-13',
+tripStart:'2026-09-03',tripEnd:'2026-11-13',
 segments:[
-...JSON.parse(JSON.stringify(DEF_A.segments.slice(0,6))),
+...JSON.parse(JSON.stringify(DEF_A.segments.slice(0,8))),
 SEG('Amsterdam','transit',3,'Fly Lofoten to Schiphol, likely via Oslo','Friend place — free','Arrive, unpack the Norway kit, resupply. Base established.',
  [['Drop everything you will not need again','Logistics'],['Buy the Italy and Spain half of the trip here','Gear'],['Activate the Eurail pass','Admin']]),
 SEG('Bovec, Slovenia','adv',4,'Fly Schiphol to Ljubljana, bus to Bovec','Campsite','Includes the travel day in. Everything here winds down mid-October.',
@@ -650,9 +654,9 @@ reminders:[
 ]};
 
 const DEF_C={
-tripStart:'2026-09-10',tripEnd:'2026-11-13',
+tripStart:'2026-09-03',tripEnd:'2026-11-13',
 segments:[
-...JSON.parse(JSON.stringify(DEF_A.segments.slice(0,6))),
+...JSON.parse(JSON.stringify(DEF_A.segments.slice(0,8))),
 SEG('North to Ljubljana by rail','transit',4,'Ferry Moskenes to Bodo, then Nordlandsbanen, Oslo, Goteborg, Copenhagen, Hamburg, Munich','Night trains and one hostel','Four days, no flights, no baggage fees. The pass covers all of it; Oslo to Copenhagen needs no reservation at all.',
  [['Ferry Moskenes to Bodo','Transit — 3.5 h'],['Night train Bodo to Trondheim','Transit — sleeps a night'],['Trondheim to Oslo','Transit — 6.5 h'],['Oslo to Goteborg to Copenhagen','Transit — no reservation needed'],['Copenhagen to Hamburg','Transit — reservation optional in October'],['Nightjet Hamburg to Vienna, or Hamburg to Munich by day','Transit'],['Munich or Vienna to Ljubljana','Transit — EC via Villach and Jesenice']]),
 SEG('Bovec, Slovenia','adv',3,'Bus from Ljubljana via Bohinjska Bistrica','Campsite','Everything here winds down mid-October.',
@@ -740,27 +744,27 @@ const DETOUR_SEED=[
    the Canaries cannot move earlier than November, so the back half never changes. */
 const DDAYS=[
 {permit:'2026-09-20',d:'2026-09-28',label:'Permit early — wait for the dark',
- nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Lofoten',6]],
+ nor:[['Oslo — arrival',1],['Bergen — city mountains',6],['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Lofoten',6]],
  eur:[['Amsterdam',3],['Bovec, Slovenia',4],['Dolomites',4],['Arco and Lake Garda',4],['Milan',2],['Chamonix — buffer',2]],
  gain:'Six nights in Lofoten from 22 to 27 Sept, and still 19 days in Europe before the TMB — two more than the baseline. An early permit buys days at both ends.',
  lose:'Andalsnes. The eight days between the card arriving and D-Day are spent in Norway, not Europe — that is the price of darkness.'},
 {permit:'2026-09-25',d:'2026-09-28',label:'Permit early — same departure',
- nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Lofoten',6]],
+ nor:[['Oslo — arrival',1],['Bergen — city mountains',6],['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Lofoten',6]],
  eur:[['Amsterdam',3],['Bovec, Slovenia',4],['Dolomites',4],['Arco and Lake Garda',4],['Milan',2],['Chamonix — buffer',2]],
  gain:'Identical to the 20 Sept case. Anything before about 26 Sept lands on the same D-Day, because Lofoten needs to sit in the last week of September for darkness.',
  lose:'Andalsnes.'},
 {permit:'2026-09-30',d:'2026-09-30',label:'As planned',
- nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',3],['Lofoten',5]],
+ nor:[['Oslo — arrival',1],['Bergen — city mountains',6],['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',3],['Lofoten',5]],
  eur:[['Amsterdam',3],['Bovec, Slovenia',3],['Dolomites',3],['Arco and Lake Garda',4],['Milan',2],['Chamonix — buffer',2]],
  gain:'Everything fits: Andalsnes back in, five nights in Lofoten from 25 to 29 Sept.',
  lose:'Nothing, but the last Lofoten day is spent flying back to Bergen for the luggage.'},
 {permit:'2026-10-05',d:'2026-10-05',label:'Late',
- nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',4],['Jotunheimen — Besseggen',3],['Lofoten',6]],
+ nor:[['Oslo — arrival',1],['Bergen — city mountains',6],['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',4],['Jotunheimen — Besseggen',3],['Lofoten',6]],
  eur:[['Amsterdam',2],['Bovec, Slovenia',3],['Arco and Lake Garda',4],['Milan',1],['Chamonix — buffer',2]],
  gain:'Six nights in Lofoten from 29 Sept to 4 Oct — the darkest and statistically best aurora window of any scenario. Besseggen too.',
  lose:'The Dolomites entirely. Two rushed days there would be worse than none, with the rifugi shut and both routes needing lifts that may have stopped.'},
 {permit:'2026-10-10',d:'2026-10-10',label:'Very late — the last date that works',
- nor:[['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',4],['Jotunheimen — Besseggen',4],['Lysefjord',3],['Lofoten',7]],
+ nor:[['Oslo — arrival',1],['Bergen — city mountains',6],['Bergen — admin',2],['Hardangerfjord',4],['Voss',2],['Finse to Aurland',4],['Andalsnes and Romsdal',4],['Jotunheimen — Besseggen',4],['Lysefjord',3],['Lofoten',7]],
  eur:[['Amsterdam',2],['Arco and Lake Garda',2],['Milan',1],['Chamonix — buffer',2]],
  gain:'Seven nights in Lofoten from 3 to 9 Oct, plus Jotunheimen and the Lysefjord. A proper month in Norway.',
  lose:'Slovenia and the Dolomites both gone. Past this date the TMB start slips and you are back in the snow argument.'}
@@ -793,6 +797,16 @@ c:[['AVE Madrid to Barcelona','passholder reservation, small quota'],['TGV Montp
 p:['Arrive, unpack, resupply.','Use it as a gear locker: the alpine kit lives here between the Alps blocks rather than travelling round Spain.','Rest properly before and after the TMB.'],
 t:['Schiphol is the only reason a hub works here. Cheap, frequent and direct to Ljubljana, Geneva, Malaga and Tenerife - every spoke is a short-haul budget route.','It is still the wrong corner of Europe for this itinerary: roughly 1,100 km from Ljubljana, 800 from Chamonix, 2,300 from Malaga. Each return costs a day in each direction.','Honest accounting for version B: it buys 9 free nights and 3 gear swaps, and costs 7 travel days, 5 extra flights, Siurana, Lanzarote, the Los Cristianos buffer night, and a TMB start pushed to 23 October.','The 17-19 October block is the one that genuinely earns its days - dropping Italian kit and collecting full alpine before Chamonix. If you only keep one Amsterdam stop, keep that one.','On a Norwegian residence permit you can move freely in the rest of Schengen on short-stay terms. Six weeks is comfortably inside them, but this is a base to visit, not to reside in on that permit.'],
 c:[['Accommodation','free — the point of the whole version'],['Schiphol spokes','budget short-haul, frequent'],['Tenerife South to Schiphol','from GBP 26-42 direct']]},
+
+'Oslo — arrival':{i:'A night in Oslo and an early train. Nothing to plan, one thing to get right.',
+p:['Land at Gardermoen on 3 Sept.','Sleep near Oslo S or on the airport line.','Bergensbanen 06:25 on the 4th, about seven hours to Bergen.','Bus from Bergen busstasjon to the BnB.'],
+t:['The 06:25 departure is the reason to sleep near the station. Do not book somewhere that needs a cross-city transfer at five in the morning.','The train is covered by the Eurail pass but Vy requires a seat reservation — book it, it is a popular route.','The Bergensbanen is one of the great rail journeys in Europe. Sit on the right leaving Oslo.'],
+c:[['Bergensbanen','covered by Eurail, reservation extra'],['Oslo bed, 3 Sept','unpriced']]},
+
+'Bergen — city mountains':{i:'The permit window. Six days you cannot plan around, in a city where every mountain is a half-day from the door.',
+p:['Floyen, 400 m — the gentle one. Funicular up, walk down, or both on foot.','Stoltzekleiven — roughly 908 steps up to Sandviksfjellet, one of the most popular trails in Bergen.','Stoltzen to Rundemanen to Floyen and back down: 2-3 hours, and the run your friend recommends.','Ulriken, 643 m, the highest of the seven, up the Oppstemten sherpa stairs.','Vidden — the Ulriken to Floyen ridge, the classic Bergen traverse.','Lovstakken, 477 m, ten minutes by bus from the centre.','Lyderhorn, 396 m, westernmost and 5 km out, with open sea views.','Damsgardsfjellet, 317 m.','The 7-fjellsturen itself: all seven in one day, 35 km and about 2,400 m of ascent.'],
+t:['Everything here is droppable at a few hours notice, which is exactly what a walk-in verification needs. Do not book anything.','Stoltzekleiven is walked UP only by convention — the stair is narrow and steep and locals descend by another route. Respect it.','The Sandviksfjellet to Rundemanen path is not clearly marked. Only in clear, predictable weather.','Lovstakken gets slippery on the rock in autumn. It is a better dry-day objective than a wet-day one.','The Storediket dam trail has been closed for construction — check bergen.kommune.no before routing through it.','The 7-fjellsturen order is Lyderhorn, Damsgardsfjellet, Lovstakken, Ulriken, Floyen, Rundemanen, Sandviksfjellet, starting at Gravdal and finishing at Skansemyren. The organised event runs the last Sunday in May, but the route is there year-round.','Treat the big day as TMB training. A 35 km day with 2,400 m of ascent in early September tells you more about your fitness than anything else on this trip.','The summit cairn on Lovstakken is three metres tall and was built by locals just after the German withdrawal in 1945.'],
+c:[['All of it','free — city buses only'],['Floibanen and Ulriksbanen','ticketed if you ride rather than walk']]},
 
 'Bergen':{i:'Admin days. One item gates everything after them, so treat this as work, not arrival.',
 p:['Day 1 — follow up the police verification; order or collect the DNT key.','Day 1 — buy gas canisters. You cannot fly with them, so this is your only chance before Hardanger.','Day 2 — food for the first trek, and confirm the Trolltunga shuttle by phone.','Day 2 — download offline maps for Norway, the Alps, Andalusia and El Hierro while you have good wifi.'],
@@ -895,7 +909,7 @@ t:['TFS, not TFN. Binter would have landed you at Tenerife North and you would b
 c:[['TFS to Schiphol, direct','from GBP 26-42 one way, Transavia or easyJet'],['Previously TFS to Oslo','INR 7,579 indirect / 16,129 direct - now dropped']]}};
 
 const CO={
-'Amsterdam':[52.3676,4.9041],
+'Amsterdam':[52.3676,4.9041],'Oslo — arrival':[59.911,10.751],'Bergen — city mountains':[60.391,5.325],
 'North to Ljubljana by rail':[55.676,12.568],'Cabo de Gata':[36.760,-2.107],
 'Rail north to Amsterdam':[48.857,2.352],'Bergen':[60.39,5.32],'Hardangerfjord':[60.07,6.55],'Finse to Aurland':[60.60,7.50],
 'Voss':[60.63,6.42],'Andalsnes and Romsdal':[62.57,7.69],'Lofoten':[67.93,13.09],
@@ -911,6 +925,8 @@ const POI={
 'Cabo de Gata':[['Almeria station',36.839,-2.464],['San Jose',36.760,-2.107],['Arrecife de las Sirenas',36.723,-2.192],['Las Negras',36.874,-2.005],['Rodalquilar',36.851,-2.045]],
 'Rail north to Amsterdam':[['Almeria',36.839,-2.464],['Madrid Atocha',40.406,-3.690],['Barcelona Sants',41.379,2.140],['Montpellier',43.604,3.881],['Paris Gare de Lyon',48.844,2.373],['Bruxelles-Midi',50.836,4.336],['Amsterdam Centraal',52.379,4.900]],
 'Amsterdam':[['Amsterdam Centraal',52.3791,4.9003],['Schiphol',52.3105,4.7683],['Jordaan',52.3739,4.8809]],
+'Oslo — arrival':[['Oslo S',59.911,10.751],['Gardermoen',60.194,11.100]],
+'Bergen — city mountains':[['Bergen stasjon',60.390,5.333],['Floyen 400 m',60.396,5.351],['Stoltzekleiven',60.404,5.331],['Sandviksfjellet 417 m',60.408,5.334],['Rundemanen 568 m',60.404,5.362],['Ulriken 643 m',60.372,5.394],['Lovstakken 477 m',60.371,5.298],['Damsgardsfjellet 317 m',60.383,5.276],['Lyderhorn 396 m',60.374,5.242]],
 'Bergen':[['Bergen station',60.390,5.333],['Bryggen',60.397,5.324],['Bus station — route 930',60.388,5.333]],
 'Hardangerfjord':[['Odda',60.068,6.545],['P2 Skjeggedal',60.115,6.685],['P3 Magelitopp',60.121,6.712],['Trolltunga',60.124,6.740],['Buerbreen',60.106,6.443],['Jondal — Folgefonna pickup',60.284,6.263],['Fonna Glacier Centre',60.045,6.352]],
 'Finse to Aurland':[['Finse station',60.602,7.505],['Osterbo',60.755,7.475],['Aurland',60.906,7.190],['Flam — kayak',60.863,7.113]],
@@ -973,7 +989,7 @@ function parseGPX(text){
 }
 
 /* ── keys, state ───────────────────────── */
-const BUILD='2026-08-27-h';
+const BUILD='2026-08-27-j';
 const VKEY='rs-version', BKEY='rs-build', SHKEY='rs-shared', GHKEY='rs-gh', PLANKEY='rs-planurl';
 const store=(typeof window!=='undefined'&&window.storage&&window.storage.get)?window.storage:{
   get:async k=>{const v=localStorage.getItem(k);if(v===null)throw new Error('not found');return{key:k,value:v};},
@@ -1486,7 +1502,7 @@ function renderDDay(){
           tD=TAIL.reduce((a,x)=>a+x[1],0);
     const total=nD+eD+tD;
     let c=sc.d; const tmbStart=(()=>{let x=addDays(sc.d,1);sc.eur.forEach(s=>x=addDays(x,s[1]));return x;})();
-    const norStart='2026-09-10';
+    const norStart='2026-09-03';
     const chain=a=>{let x=norStart,o=[];a.forEach(s=>{o.push([s[0],x,addDays(x,s[1]-1),s[1]]);x=addDays(x,s[1]);});return o;};
     const nor=chain(sc.nor);
     let x=addDays(sc.d,1),eur=[];sc.eur.forEach(s=>{eur.push([s[0],x,addDays(x,s[1]-1),s[1]]);x=addDays(x,s[1]);});
@@ -1615,7 +1631,14 @@ function renderSet(){
       '<button class="btn" id="impB">Restore backup</button><input type="file" id="impF" accept="application/json" hidden>'+
       '<button class="btn" id="planE">Download plan.json</button>'+
       '<button class="btn" id="planI">Load plan.json</button><input type="file" id="planIF" accept="application/json" hidden>'+
-      '<button class="btn" id="prB">Print all versions</button></div></div>'+
+      '<button class="btn" id="prB">Print all versions</button></div>'+
+      '<div class="tools" style="margin-top:10px">'+
+      '<button class="btn" id="icsB">Export calendar (.ics)</button>'+
+      '<button class="btn" id="kmlB">Export map (.kml)</button></div>'+
+      '<p class="hint" style="margin-top:10px">Neither TripIt nor Wanderlog imports a plan file — both work by '+
+      'forwarding booking confirmation emails. These two formats are the bridge: the .ics drops the whole '+
+      'itinerary into Google, Apple or Outlook Calendar, and the .kml imports into Google My Maps, which '+
+      'Wanderlog can then read.</p></div>'+
     '<div class="sec"><h3>Offline</h3><p class="hint" id="swNote"></p>'+
       '<div class="tools"><button class="btn" id="dlMaps">Save maps offline</button></div></div>'+
     '<div class="sec"><h3>Start over</h3>'+
@@ -1679,9 +1702,62 @@ function renderSet(){
   $('#resetB').onclick=()=>{if(!confirm('Reset version '+CURV+' to the plan as drawn?'))return;
     const kk=S.kit,pp=S.pre;S=JSON.parse(JSON.stringify(VERS[CURV].def));S.kit=kk;S.pre=pp;norm();
     SEL=0;killMaps();render();save();};
+  $('#icsB').onclick=exportICS;
+  $('#kmlB').onclick=exportKML;
   $('#dlMaps').onclick=prefetch;
   $('#swNote').textContent=HOSTED?'The page and its code are cached for offline use. Save map tiles before you travel.'
     :'Offline caching activates once this file is hosted over HTTPS.';
+}
+
+/* ── exports for other apps ────────────── */
+function dl(name,mime,text){
+  const b=new Blob([text],{type:mime});const a=document.createElement('a');
+  a.href=URL.createObjectURL(b);a.download=name;a.click();URL.revokeObjectURL(a.href);}
+function icsEsc(s){return String(s==null?'':s).replace(/\\/g,'\\\\').replace(/[,;]/g,m=>'\\'+m).replace(/\r?\n/g,'\\n');}
+function exportICS(){
+  const d=dates(),now=new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  const nd=s=>s.replace(/-/g,'');
+  let L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Route sheet//'+CURV+'//EN','CALSCALE:GREGORIAN',
+    'X-WR-CALNAME:'+icsEsc('Route sheet '+CURV)];
+  S.segments.forEach((s,i)=>{
+    const body=[s.transport?'Getting there: '+s.transport:'',s.stay?'Sleeping: '+s.stay:'',
+      (s.items||[]).length?'\n'+(s.items||[]).map(x=>'• '+x.text).filter(t=>t!=='• ').join('\n'):'',
+      s.notes?'\n'+s.notes:''].filter(Boolean).join('\n');
+    L.push('BEGIN:VEVENT','UID:'+s.id+'-'+CURV+'@routesheet','DTSTAMP:'+now,
+      'DTSTART;VALUE=DATE:'+nd(d[i].from),'DTEND;VALUE=DATE:'+nd(addDays(d[i].to,1)),
+      'SUMMARY:'+icsEsc((i+1)+'. '+s.place),'DESCRIPTION:'+icsEsc(body),'TRANSP:TRANSPARENT','END:VEVENT');
+  });
+  S.bookings.filter(b=>b.deadline&&b.status!=='done').forEach(b=>{
+    L.push('BEGIN:VEVENT','UID:bk-'+b.id+'-'+CURV+'@routesheet','DTSTAMP:'+now,
+      'DTSTART;VALUE=DATE:'+nd(b.deadline),'DTEND;VALUE=DATE:'+nd(addDays(b.deadline,1)),
+      'SUMMARY:'+icsEsc('Book: '+b.what),'DESCRIPTION:'+icsEsc(b.group+' · '+STLBL[b.status]),
+      'TRANSP:TRANSPARENT','END:VEVENT');
+  });
+  L.push('END:VCALENDAR');
+  dl('route-sheet-'+CURV+'.ics','text/calendar',L.join('\r\n'));
+}
+function exportKML(){
+  const d=dates(),x=s=>String(s==null?'':s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  let k=['<?xml version="1.0" encoding="UTF-8"?>','<kml xmlns="http://www.opengis.net/kml/2.2"><Document>',
+    '<name>'+x('Route sheet '+CURV)+'</name>'];
+  const line=[];
+  S.segments.forEach((s,i)=>{
+    const c=coordsFor(s); if(!c)return;
+    line.push(c[1].toFixed(5)+','+c[0].toFixed(5)+',0');
+    const body=[fmt(d[i].from)+(d[i].n>1?' – '+fmt(d[i].to):'')+' · '+d[i].n+' days',
+      s.transport,s.stay,(s.items||[]).map(y=>'• '+y.text).filter(t=>t!=='• ').join('\n')]
+      .filter(Boolean).join('\n');
+    k.push('<Placemark><name>'+x((i+1)+'. '+s.place)+'</name><description>'+x(body)+
+      '</description><Point><coordinates>'+c[1].toFixed(5)+','+c[0].toFixed(5)+',0</coordinates></Point></Placemark>');
+    (POI[s.place]||[]).forEach(p=>k.push('<Placemark><name>'+x(p[0])+'</name><description>'+x(s.place)+
+      '</description><Point><coordinates>'+p[2].toFixed(5)+','+p[1].toFixed(5)+',0</coordinates></Point></Placemark>'));
+  });
+  if(line.length>1)k.push('<Placemark><name>Route</name><LineString><tessellate>1</tessellate>'+
+    '<coordinates>'+line.join(' ')+'</coordinates></LineString></Placemark>');
+  (S.tracks||[]).forEach(t=>k.push('<Placemark><name>'+x(t.name)+'</name><LineString><tessellate>1</tessellate>'+
+    '<coordinates>'+t.pts.map(p=>p[1].toFixed(5)+','+p[0].toFixed(5)+',0').join(' ')+'</coordinates></LineString></Placemark>'));
+  k.push('</Document></kml>');
+  dl('route-sheet-'+CURV+'.kml','application/vnd.google-earth.kml+xml',k.join('\n'));
 }
 
 /* ── print ─────────────────────────────── */
